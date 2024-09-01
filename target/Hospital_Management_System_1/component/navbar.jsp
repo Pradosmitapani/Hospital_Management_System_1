@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <!-- Updated image source -->
     <a class="nav-link active" aria-current="page" href="#">
-      Doctors Center Hospital<br>
+      <h2>Doctors Center Hospital</h2></h2><br>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -16,14 +16,12 @@
           <a class="nav-link active" aria-current="page" href="#">
             Call Us<br><i class="fas fa-phone"></i> 7986540432
           </a>
-
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">
             Find Location<br><i class="fa-solid fa-location-dot"></i>
           </a>
-
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">24x7 Availability<i class="fa-solid fa-hand-holding-medical"></i></a>
+          <a class="nav-link active" aria-current="page" href="#">24x7 Availability<br><i class="fa-solid fa-hand-holding-medical"></i></a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#"></a>

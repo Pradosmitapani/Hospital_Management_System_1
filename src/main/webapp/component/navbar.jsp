@@ -9,15 +9,13 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-
-
         <!-- Call Us -->
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">
             Call Us<br><i class="fas fa-phone"></i> 7986540432
           </a>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">
+          <a class="nav-link active" aria-current="page" href="https://www.orlandohealth.com/locations#/">
             Find Location<br><i class="fa-solid fa-location-dot"></i>
           </a>
         <li class="nav-item">
