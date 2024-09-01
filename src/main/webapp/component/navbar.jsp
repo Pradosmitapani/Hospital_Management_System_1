@@ -1,10 +1,10 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-info p-5">
   <div class="container-fluid">
     <!-- Updated image source -->
-    <a class="navbar-brand" href="#">
-      <img src="img/images.jpg" alt="Logo" width="200px" height="130px">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="nav-link active" aria-current="page" href="#">
+      Doctors Center Hospital<br>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -18,6 +18,12 @@
           <a class="nav-link active" aria-current="page" href="#">
             Call Us<br><i class="fas fa-phone"></i> 7986540432
           </a>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">
+            Find Location<br><i class="fa-solid fa-location-dot"></i>
+          </a>
+
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">24x7 Availability<i class="fa-solid fa-hand-holding-medical"></i></a>
         </li>
