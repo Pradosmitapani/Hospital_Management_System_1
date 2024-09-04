@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>User Login Page</title>
+<title>USER LOGIN PAGE</title>
 <%@include file = "component/allcss.jsp" %>
 <style>
 .divider:after,

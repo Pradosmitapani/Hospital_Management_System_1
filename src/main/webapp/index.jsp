@@ -5,7 +5,7 @@
 <head>
 
 <meta charset="UTF-8">
-<title>Index Page</title>
+<title>INDEX PAGE</title>
 <%@include file="component/allcss.jsp"%>
 
 <style>
@@ -15,9 +15,7 @@ body{
   background:#f2f2f2;
   font-family: 'Acme';
   height:500px;
-  
-  
-  
+
   font-family: 'Muli', sans-serif;
      height: 100% !important;
      background-color: primary;
@@ -245,9 +243,9 @@ Our expert doctors provides specialized care across 21 hospitals nationwide,cove
  
   </div>
   
-  </div>  
-  
-    
+  </div>
+
+
   <div class="col-md-5">
   <div class="card-paint-card">
  <div class="card-body text-center">
@@ -345,26 +343,6 @@ Our expert doctors provides specialized care across 21 hospitals nationwide,cove
   
 </div>
 <!-- End of .container -->
-        
-        
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </body>
 </html>
