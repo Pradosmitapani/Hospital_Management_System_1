@@ -141,7 +141,7 @@ body{
 <center>
 <h1>Expert Care Nationwide</h1>
 <h4><p>
-Our expert doctors provides specialized care across 21 hospitals nationwide,covering 110+ specialities such as cardiac sciences,cancer care,orthopaedics,neurology,gastroenterology,liver and kidney transplants etc.
+Our expert doctors provides specialized care across 30 hospitals nationwide,covering 130+ specialities such as cardiac sciences,cancer care,orthopaedics,neurology,gastroenterology,liver and kidney transplants etc.
 </p></h4></center>
 <div class="container">
   <div class="card">
@@ -202,7 +202,7 @@ Our expert doctors provides specialized care across 21 hospitals nationwide,cove
     <hr>
     
     <div class="container p-2">
-    <p class="text-center fs-3">Our Team</p>
+    <p class="text-center fs-3">Our Team Members</p>
     <div class="row">
     
     <div class="col-md-5">
