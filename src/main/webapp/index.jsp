@@ -25,6 +25,7 @@ body{
  
 }
 
+
 .container{
   max-width:1000px;
   margin:100px auto;
@@ -32,6 +33,7 @@ body{
   flex-wrap:wrap;
   justify-content:space-around;
 }
+
 
 .card{
   position:relative;
@@ -83,6 +85,7 @@ body{
   padding:20px;
   color:#000;
 }
+
 
  .card .card-details h2{
   margin:0;
