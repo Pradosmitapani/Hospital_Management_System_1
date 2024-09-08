@@ -31,7 +31,7 @@ height: 100%;
       <li style="display: inline-block;"><a href="index.jsp" style="color: white; text-decoration: none; padding: 10px; transition: background-color 0.3s ease; border-radius: 5px;">Home</a></li>
       <li style="display: inline-block;"><a href="Aboutus.jsp" style="color: white; text-decoration: none; padding: 10px; transition: background-color 0.3s ease; border-radius: 5px;">About</a></li>
       <li style="display: inline-block;"><a href="contact.jsp" style="color: white; text-decoration: none; padding: 10px; transition: background-color 0.3s ease; border-radius: 5px;">Contact Us</a></li>
-      <li style="display: inline-block;"><a href="#" style="color: white; text-decoration: none; padding: 10px; transition: background-color 0.3s ease; border-radius: 5px;"></a></li>
+      <li style="display: inline-block;"><a href="#" style="color: white; text-decoration: none; padding: 10px; transition: background-color 0.3s ease; border-radius: 5px;"></a>Appoinment</li>
       
       
       <div style="position: relative; display: inline-block;">
