@@ -15,9 +15,7 @@ body{
   background:#f2f2f2;
   font-family: 'Acme';
   height:500px;
-  
-  
-  
+
   font-family: 'Muli', sans-serif;
      height: 100% !important;
      background-color: primary;
@@ -105,41 +103,69 @@ body{
 
 
 
- 
+
 
 </style>
 </head>
 <body>
 
-<%@include file="component/navbar.jsp"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor Center Hospital</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif;">
 
-<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="img/doctor.jpg" class="d-block w-100" alt="..." height="500px">
+  <!-- Navbar -->
+  <div style="position: fixed; width: 100%; top: 0; left: 0; background-color: #318CE7; color: white; padding: 14px 20px; display: flex; justify-content: space-between; align-items: center; z-index: 1000;">
+    <div style="font-size: 24px; font-weight: bold;">Doctors Center Hospital</div>
+    <ul style="list-style: none; margin: 0; padding: 0; display: flex; gap: 20px;">
+      <li style="display: inline-block;"><a href="index.jsp" style="color: white; text-decoration: none; padding: 10px; transition: background-color 0.3s ease; border-radius: 5px;">Home</a></li>
+      <li style="display: inline-block;"><a href="Aboutus.jsp" style="color: white; text-decoration: none; padding: 10px; transition: background-color 0.3s ease; border-radius: 5px;">About</a></li>
+      <li style="display: inline-block;"><a href="contact.jsp" style="color: white; text-decoration: none; padding: 10px; transition: background-color 0.3s ease; border-radius: 5px;">Contact Us</a></li>
+      <li style="display: inline-block;"><a href="#" style="color: white; text-decoration: none; padding: 10px; transition: background-color 0.3s ease; border-radius: 5px;"></a></li>
+      
+      
+      <div style="position: relative; display: inline-block;">
+    <a href="#" id="dropdown-toggle" style="padding: 10px; background-color: #4CAF50; color: white; text-decoration: none;">Login</a>
+    
+    <div id="dropdown-menu" style="display: none; position: absolute; background-color: #f9f9f9; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1;">
+        <a href="user_login.jsp" style="color: black; padding: 10px 20px; text-decoration: none; display: block;">User</a>
+        <a href="admin_login.jsp" style="color: black; padding: 10px 20px; text-decoration: none; display: block;">Admin</a>
+        <a href="doctor_login.jsp" style="color: black; padding: 10px 20px; text-decoration: none; display: block;">Doctor</a>
     </div>
-    <div class="carousel-item">
-      <img src="img/doctor1.jpg" class="d-block w-100" alt="..." height="500px">
-    </div>
-    <div class="carousel-item">
-      <img src="img/doctor2.jpg" class="d-block w-100" alt="..." height="500px">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
 </div>
-<br><br>
+
+<script>
+    // JavaScript to toggle dropdown visibility
+    document.getElementById('dropdown-toggle').addEventListener('click', function(event) {
+        event.preventDefault();
+        var dropdown = document.getElementById('dropdown-menu');
+        dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+    });
+</script>
+      
+      
+    </ul>
+  </div>
+
+  <!-- Header Section -->
+  <div style="height: 100vh; background-image: url('img/doctor.jpg'); background-size: cover; background-position: center; display: flex; justify-content: center; align-items: center; color: white; text-align: center;">
+    <div>
+      <h1 style="font-size: 4rem; margin: 0; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);">Doctors Center Hospital</h1>
+      <p style="font-size: 1.5rem; margin-top: 10px; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);">Expert Care With a Human Touch</p>
+    </div>
+  </div>
+
+  
+  
+ 
+  
+
+
+
 <center>
 <h1>Expert Care Nationwide</h1>
 <h4><p>
@@ -346,25 +372,6 @@ Our expert doctors provides specialized care across 21 hospitals nationwide,cove
 </div>
 <!-- End of .container -->
         
-        
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </body>
 </html>

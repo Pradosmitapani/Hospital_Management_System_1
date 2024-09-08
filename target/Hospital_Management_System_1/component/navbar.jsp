@@ -1,121 +1,37 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-info p-5">
   <div class="container-fluid">
     <!-- Updated image source -->
-    <a class="nav-link active" aria-current="page" href="#">
-      <h2>Doctors Center Hospital</h2></h2><br>
+    <div style="position: fixed; width: 100%; top: 0; left: 0; background-color: #318CE7; color: white; padding: 14px 20px; display: flex; justify-content: space-between; align-items: center; z-index: 1000;">
+      <div style="font-size: 24px; font-weight: bold;">Doctors Center Hospital</div>
+      <ul style="list-style: none; margin: 0; padding: 0; display: flex; gap: 20px;">
+        <li style="display: inline-block;"><a href="index.jsp" style="color: white; text-decoration: none; padding: 10px; transition: background-color 0.3s ease; border-radius: 5px;">Home</a></li>
+        <li style="display: inline-block;"><a href="Aboutus.jsp" style="color: white; text-decoration: none; padding: 10px; transition: background-color 0.3s ease; border-radius: 5px;">About</a></li>
+        <li style="display: inline-block;"><a href="contact.jsp" style="color: white; text-decoration: none; padding: 10px; transition: background-color 0.3s ease; border-radius: 5px;">Contact Us</a></li>
+        <li style="display: inline-block;"><a href="#" style="color: white; text-decoration: none; padding: 10px; transition: background-color 0.3s ease; border-radius: 5px;"></a></li>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+        <div style="position: relative; display: inline-block;">
+          <a href="#" id="dropdown-toggle" style="padding: 10px; background-color: #4CAF50; color: white; text-decoration: none;">Login</a>
+
+          <div id="dropdown-menu" style="display: none; position: absolute; background-color: #f9f9f9; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1;">
+            <a href="user_login.jsp" style="color: black; padding: 10px 20px; text-decoration: none; display: block;">User</a>
+            <a href="admin_login.jsp" style="color: black; padding: 10px 20px; text-decoration: none; display: block;">Admin</a>
+            <a href="doctor_login.jsp" style="color: black; padding: 10px 20px; text-decoration: none; display: block;">Doctor</a>
+          </div>
+        </div>
+
+        <script>
+          // JavaScript to toggle dropdown visibility
+          document.getElementById('dropdown-toggle').addEventListener('click', function(event) {
+            event.preventDefault();
+            var dropdown = document.getElementById('dropdown-menu');
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+          });
+        </script>
 
 
-        <!-- Call Us -->
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">
-            Call Us<br><i class="fas fa-phone"></i> 7986540432
-          </a>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">
-            Find Location<br><i class="fa-solid fa-location-dot"></i>
-          </a>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">24x7 Availability<br><i class="fa-solid fa-hand-holding-medical"></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#"></a>
-        </li>
-        
-        
-        <!--  <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li> -->
-        
-        
-        
       </ul>
-      
     </div>
-  </div>
-</nav>
-
-
-
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.jsp"><i class="fa-solid fa-hospital"></i>HOME</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-      
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="admin_login.jsp"><i class="fa-solid fa-right-to-bracket"></i>ADMIN</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="doctor_login.jsp">DOCTOR</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">APPOTTNMENT</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="user_login.jsp">USER</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="contact.jsp">CONTACT US</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="Aboutus.jsp">ABOUT US</a>
-        </li>
-        
-        <!--  <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li> -->
-        
-        
-        
-      </ul>
-      
-    </div>
-  </div>
-</nav>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
