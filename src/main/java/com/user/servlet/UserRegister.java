@@ -33,7 +33,6 @@ public class UserRegister extends HttpServlet {
            }
 
 
-
         } catch (Exception e){
             e.printStackTrace();
         }
