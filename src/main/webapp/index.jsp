@@ -362,7 +362,6 @@ body{
 
             </div>
 
-
             <div class="col-md-5">
                 <div class="card-paint-card">
                     <div class="card-body text-center">

@@ -177,7 +177,7 @@ height: 100%;
                 </a>
             </div>
         </div>
-    </foote> 
+    </footer> 
     
   
     <!-- Copyright -->
