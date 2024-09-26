@@ -1,3 +1,6 @@
+<%@ page import="java.sql.Connection" %>
+<%@ page import="com.db.DBConnect" %>
+<%@ page import="java.sql.SQLException" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -8,6 +11,102 @@
     <title>Index Page</title>
     <%@include file="component/allcss.jsp"%>
 
+<<<<<<< HEAD
+<style>
+body{
+  margin:0;
+  padding:0;
+  background:#f2f2f2;
+  font-family: 'Acme';
+  height:500px;
+
+  font-family: 'Muli', sans-serif;
+     height: 100% !important;
+     background-color: primary;
+     padding-bottom: 0 !important;
+     margin-bottom: 0 !important;
+     color: primary;
+ 
+}
+
+.container{
+  max-width:1000px;
+  margin:100px auto;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-around;
+}
+
+
+.card{
+  position:relative;
+  margin:20px 0;
+  width:300px;
+  height:400px;
+  background: #fff;
+  transform-style:preserve-3d;
+  transform:perspective(2000px);
+  transition:1s;
+  box-shadow:inset 100px 0 50px rgba(0,0,0,0.5);
+}
+
+.card:hover{
+  z-index:1111;
+  transform:perspective(2000px) rotate(-10deg);
+  box-shadow:inset 20px 0 50px rgba(0,0,0,0.5);
+}
+
+.card .img-container{
+  position:relative;
+  width:100%;
+  height:100%;
+  border:1px solid #000;
+  box-sizing:border-box;
+  transform-origin:left;
+  z-index:1;
+  transition:1s;
+}
+
+.card .img-container img{
+  position:absolute;
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  object-fit:cover;
+}
+
+.card:hover .img-container{
+  transform:rotateY(-135deg);
+}
+
+.card .card-details{
+  position:absolute;
+  left:0;
+  top:0;
+  box-sizing:border-box;
+  padding:20px;
+  color:#000;
+}
+
+
+ .card .card-details h2{
+  margin:0;
+  padding:0.5em 0;
+  text-transform:uppercase;
+  font-size:2em;
+  color:#ed363a;
+}
+
+.card .card-details p{
+  margin:0;
+  padding:0;
+  line-height:25px;
+  font-size:1.1em;
+  
+ }
+ 
+=======
     <style>
         body{
             margin:0;
@@ -15,6 +114,7 @@
             background:#f2f2f2;
             font-family: 'Acme';
             height:500px;
+>>>>>>> e6735714a79d153efa920e360d1a5e3629ecbccc
 
 
 
@@ -101,18 +201,17 @@
             font-size:1.1em;
 
         }
-
-
-
-
-
+        
 
     </style>
 </head>
 <body>
 
+
+
+
 <div style="position: fixed; width: 100%; top: 0; left: 0; background-color: #318CE7; color: white; padding: 14px 20px; display: flex; justify-content: space-between; align-items: center; z-index: 1000;">
-    <div style="font-size: 24px; font-weight: bold;">Doctors Center Hospital</div>
+    <div style="font-size: 24px; font-weight: bold;">CENTURION HOSPITAL</div>
     <ul style="list-style: none; margin: 0; padding: 0; display: flex; gap: 20px;">
       <li style="display: inline-block;"><a href="index.jsp" style="color: white; text-decoration: none; padding: 10px; transition: background-color 0.3s ease; border-radius: 5px;">Home</a></li>
       <li style="display: inline-block;"><a href="Aboutus.jsp" style="color: white; text-decoration: none; padding: 10px; transition: background-color 0.3s ease; border-radius: 5px;">About</a></li>
@@ -263,7 +362,6 @@
 
             </div>
 
-
             <div class="col-md-5">
                 <div class="card-paint-card">
                     <div class="card-body text-center">
@@ -375,26 +473,6 @@
 
 </div>
 <!-- End of .container -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </body>
 </html>
