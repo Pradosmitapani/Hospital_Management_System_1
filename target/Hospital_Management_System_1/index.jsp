@@ -211,7 +211,7 @@ body{
 
 
 <div style="position: fixed; width: 100%; top: 0; left: 0; background-color: #318CE7; color: white; padding: 14px 20px; display: flex; justify-content: space-between; align-items: center; z-index: 1000;">
-    <div style="font-size: 24px; font-weight: bold;">CENTURION HOSPITAL</div>
+    <div style="font-size: 24px; font-weight: bold;">Doctor Center  Hospital</div>
     <ul style="list-style: none; margin: 0; padding: 0; display: flex; gap: 20px;">
       <li style="display: inline-block;"><a href="index.jsp" style="color: white; text-decoration: none; padding: 10px; transition: background-color 0.3s ease; border-radius: 5px;">Home</a></li>
       <li style="display: inline-block;"><a href="Aboutus.jsp" style="color: white; text-decoration: none; padding: 10px; transition: background-color 0.3s ease; border-radius: 5px;">About</a></li>
@@ -361,7 +361,6 @@ body{
                 </div>
 
             </div>
-
 
             <div class="col-md-5">
                 <div class="card-paint-card">
