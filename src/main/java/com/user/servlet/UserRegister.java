@@ -9,6 +9,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 @WebServlet("/user_register")
@@ -24,10 +25,13 @@ public class UserRegister extends HttpServlet {
 
            UserDao dao = new UserDao(DBConnect.getConn());
 
+           HttpSession session = req.getSession();
+
            boolean f = dao.register(u);
 
-           if(f){
-               System.out.println("Register successfully");
+           if(f) {
+               session.setAttribute("sucMsg", "Register successfully");
+               resp.sendRedirect("/user_login");
            }else{
                System.out.println("Register failed");
            }
