@@ -1,51 +1,54 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-info p-5">
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page isELIgnored="false"%>
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
   <div class="container-fluid">
-    <!-- Updated image source -->
-    <div style="position: fixed; width: 100%; top: 0; left: 0; background-color: #318CE7; color: white; padding: 14px 20px; display: flex; justify-content: space-between; align-items: center; z-index: 1000;">
-      <div style="font-size: 24px; font-weight: bold;">Doctors Center Hospital</div>
-      <ul style="list-style: none; margin: 0; padding: 0; display: flex; gap: 20px;">
-        <li style="display: inline-block;"><a href="index.jsp" style="color: white; text-decoration: none; padding: 10px; transition: background-color 0.3s ease; border-radius: 5px;">Home</a></li>
-        <li style="display: inline-block;"><a href="Aboutus.jsp" style="color: white; text-decoration: none; padding: 10px; transition: background-color 0.3s ease; border-radius: 5px;">About</a></li>
-        <li style="display: inline-block;"><a href="contact.jsp" style="color: white; text-decoration: none; padding: 10px; transition: background-color 0.3s ease; border-radius: 5px;">Contact Us</a></li>
-        <li style="display: inline-block;"><a href="#" style="color: white; text-decoration: none; padding: 10px; transition: background-color 0.3s ease; border-radius: 5px;"></a></li>
-
-
-        <div style="position: relative; display: inline-block;">
-          <a href="#" id="dropdown-toggle" style="padding: 10px; background-color: #4CAF50; color: white; text-decoration: none;">Login</a>
-
-          <div id="dropdown-menu" style="display: none; position: absolute; background-color: #f9f9f9; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1;">
-            <a href="user_login.jsp" style="color: black; padding: 10px 20px; text-decoration: none; display: block;">User</a>
-            <a href="admin_login.jsp" style="color: black; padding: 10px 20px; text-decoration: none; display: block;">Admin</a>
-            <a href="doctor_login.jsp" style="color: black; padding: 10px 20px; text-decoration: none; display: block;">Doctor</a>
-          </div>
-        </div>
-
-        <script>
-          // JavaScript to toggle dropdown visibility
-          document.getElementById('dropdown-toggle').addEventListener('click', function(event) {
-            event.preventDefault();
-            var dropdown = document.getElementById('dropdown-menu');
-            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
-          });
-        </script>
-
-
+    <a class="navbar-brand text-white" href="index.jspv"><i class="fa-solid fa-house-medical"></i>MEDI HOME</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+      
+      <c:if test="${empty userObj }">
+           <li class="nav-item">
+          <a class="navbar-brand text-white" aria-current="page" href="admin_login.jsp"><i class="fa-solid fa-right-to-bracket"></i>ADMIN</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="navbar-brand text-white" aria-current="page" href="doctor_login.jsp">DOCTOR</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="navbar-brand text-white" aria-current="page" href="#">APPOINTMENT</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="navbar-brand text-white" aria-current="page" href="user_login.jsp">USER</a>
+        </li>
+      </c:if>
+      
+        <c:if test="${not empty userObj }">
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">APPOINTMENT</a></li>
+        
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">VIEW APPOINTMENT</a>
+        
+        <div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+   <i class="fa-solid fa-circle-user"></i>${userObj.fullName } 
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" href="#">Change Password</a></li>
+    <li><a class="dropdown-item" href="userLogout">Logout</a></li>
+  </ul>
+</div>
+        
+        
+        </c:if>
+        
+       
+        
       </ul>
+      
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  </div>
+</nav>0.2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
