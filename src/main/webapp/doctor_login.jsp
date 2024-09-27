@@ -10,7 +10,16 @@
 
 <div class="container p-5">
     <div class="row">
+<div class="col-md-4 offset-md-4">
+    <div class="card paint card">
+        <div class="card-body">
+            <p class="fs-4 text-center">Doctor Login</p>
 
+
+        </div>
+
+    </div>
+</div>
     </div>
 </div>
 </body>
