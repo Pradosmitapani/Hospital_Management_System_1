@@ -23,7 +23,7 @@ public class UserDao {
             ps.setString(2, u.getEmail());
             ps.setString(3, u.getPassword());
 
-            int i=ps.executeUpdate();
+            int i=ps.  executeUpdate();
 
             if(i==1){
                 f = true;
