@@ -1,40 +1,47 @@
 package com.user.servlet;
 
-import com.dao.UserDao;
-import com.db.DBConnect;
-import com.entity.User;
+import java.io.IOException;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
+import javax.servlet.http.HttpSession;
+
+import com.dao.UserDao;
+import com.db.DBConnect;
+import com.entity.User;
 
 @WebServlet("/user_register")
 public class UserRegister extends HttpServlet {
-    @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        try{
-           String fullName = req.getParameter("fullName");
-           String email = req.getParameter("email");
-           String password = req.getParameter("password");
 
-           User u = new User(fullName, email, password);
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+	    try {
+	        String fullName = req.getParameter("fullname");
+	        String email = req.getParameter("email");
+	        String password = req.getParameter("password");
 
-           UserDao dao = new UserDao(DBConnect.getConn());
+	        User u = new User(fullName, email, password);
 
-           boolean f = dao.register(u);
+	        UserDao dao = new UserDao(DBConnect.getConn());
 
-           if(f){
-               System.out.println("Register successfully");
-           }else{
-               System.out.println("Register failed");
-           }
+	        HttpSession session = req.getSession();
 
+	        boolean f = dao.register(u);
 
-        } catch (Exception e){
-            e.printStackTrace();
-        }
-    }
+	        if (f) {
+	            System.out.println("register succesfully");
+
+	        } else {
+	        	System.out.println("Something wrong on server");
+
+	        }
+
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	       
+	}
+	}
 }
