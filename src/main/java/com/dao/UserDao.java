@@ -8,6 +8,7 @@ import java.sql.PreparedStatement;
 public class UserDao {
     private Connection conn;
 
+//    Generate constructor
     public UserDao(Connection conn) {
         this.conn = conn;
     }

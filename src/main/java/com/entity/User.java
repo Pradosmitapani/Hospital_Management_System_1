@@ -5,13 +5,16 @@ public class User{
 	private String fullName;
 	private String email;
 	private String password;
-	
+
+//	Generate constructor using field
 	public User(String fullName, String email, String password) {
 		super();
 		this.fullName = fullName;
 		this.email = email;
 		this.password = password;
+
 	}
+//	Generate gatter and setter method
 	public int getId() {
 		return id;
 	}

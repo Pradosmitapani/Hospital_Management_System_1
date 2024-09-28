@@ -1,8 +1,7 @@
 <%@page import="com.db.DBConnect"%>
 <%@page import="java.sql.Connection"%>
-<%@page import="java.sql.ResultSet"%>
-<%@page import="java.sql.Statement"%>
 
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,18 +9,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index Page</title>
     <%@ include file="component/allcss.jsp" %>
+
+
+<%--Shaddow in all page--%>
     <style type="text/css">
-        .paint-card {
-            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+        .paint-card{
+            box-shadow:0 0 10px 0 rgba(0,0,0,0.3);
         }
     </style>
+
 </head>
 <body>
 
+
 <%@ include file="component/navbar.jsp" %>
 
+<% Connection conn=DBConnect.getConn();
+out.print(conn);
+%>
+
 <!-- Carousel -->
-<section id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -46,49 +54,100 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
     </button>
-</section>
+</div>
 
 <!-- Key Features Section -->
-<section class="container p-3">
-    <h2 class="text-center">Key Features of our Hospital</h2>
+<div class="container p-3">
+    <p class="text-center fs-2">Key Features of our Hospital</p>
     <div class="row">
         <div class="col-md-8 p-5">
             <div class="row">
-                <c:forEach var="feature" items="${features}">
-                    <div class="col-md-6">
-                        <div class="card paint-card">
-                            <div class="card-body">
-                                <p class="fs-5">${feature.title}</p>
-                                <p>${feature.description}</p>
-                            </div>
+                <div class="col-md-6">
+                    <div class="card paint-card">
+                        <div class="card-body">
+                            <p class="fs-5">100% Safety</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
-                </c:forEach>
+                </div>
+                <div class="col-md-6">
+                    <div class="card paint-card">
+                        <div class="card-body">
+                            <p class="fs-5">Clean Environment</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-2">
+                    <div class="card paint-card">
+                        <div class="card-body">
+                            <p class="fs-5">Friendly Doctors</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-2">
+                    <div class="card paint-card">
+                        <div class="card-body">
+                            <p class="fs-5">Medical Research</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
         <div class="col-md-4">
             <img alt="" src="img/doct1.jpg" height="380px">
         </div>
     </div>
-</section>
+</div>
 
-<!-- Our Team Section -->
-<section class="container p-2">
-    <h2 class="text-center">Our Team</h2>
+<hr>
+<div class="container p-2">
+    <p class="text-center fs-2 ">Our Team</p>
     <div class="row">
-        <c:forEach var="doctor" items="${doctors}">
-            <div class="col-md-3">
-                <div class="card paint-card">
-                    <div class="card-body text-center">
-                        <img src="${doctor.image}" width="255px" height="250px">
-                        <p class="fw-bold fs-5">${doctor.name}</p>
-                        <p class="fs-7">(${doctor.position})</p>
-                    </div>
+        <div class="col-md-3">
+            <div class="card paint-card">
+                <div class="card-body text-center">
+                    <img src="img/doct8.jpg" width="255px" height="250px">
+                    <p class="fw-bold fs-5">Dr.Siva Kumar</p>
+                    <p class="fs-7">(CEO & Chairman)</p>
                 </div>
             </div>
-        </c:forEach>
-    </div>
-</section>
+        </div>
+        <div class="col-md-3">
+            <div class="card paint-card">
+                <div class="card-body text-center">
+                    <img src="img/doct12.jpg" width="255px" height="250px">
+                    <p class="fw-bold fs-5">Dr.Samuani Simi</p>
+                    <p class="fs-7">(Chief Doctor)</p>
+                </div>
+            </div>
+        </div>
 
+        <div class="col-md-3">
+            <div class="card paint-card">
+                <div class="card-body text-center">
+                    <img src="img/doct11.jpg" width="255px" height="250px">
+                    <p class="fw-bold fs-5">Dr.Mathue Samuel</p>
+                    <p class="fs-7">(Chief Doctor)</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card paint-card">
+                <div class="card-body text-center">
+                    <img src="img/doct2.jpg" width="255px" height="250px">
+                    <p class="fw-bold fs-5">Dr.Siva Niuise Paule</p>
+                    <p class="fs-7">(Chief Doctor)</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<%--Footer--%>
+<%@include file="component/footer.jsp"%>
 </body>
 </html>

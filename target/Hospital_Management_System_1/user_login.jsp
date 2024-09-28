@@ -9,6 +9,7 @@
 </head>
 <body>
 <%@include file="component/navbar.jsp"%>
+<%--Shaddow in all page--%>
 <style type="text/css">
   .paint-card {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
@@ -49,7 +50,7 @@
             <button type="submit" class="btn bg-success text white col-md-12">Login</button>
 
           </form>
-          <br> Don't have an account?<a href="signup.jsp" class="text-decoration-none">Create One</a>
+          <br> Don't have an account?<a href="signup.jsp" class="text-decoration-none">Create One account</a>
 
         </div>
 
@@ -60,5 +61,7 @@
   </div>
 
 </div>
+<%--Footer--%>
+<%@include file="component/footer.jsp"%>
 </body>
 </html>

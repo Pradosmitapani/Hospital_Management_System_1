@@ -4,11 +4,12 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Insert title here</title>
+  <title>Doctor Login Page</title>
   <%@include file="component/allcss.jsp"%>
 </head>
 <body>
 <%@include file="component/navbar.jsp"%>
+<%--Shaddow in all page--%>
 <style type="text/css">
   .paint-card {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
@@ -55,5 +56,7 @@
   </div>
 
 </div>
+<%--Footer--%>
+<%@include file="component/footer.jsp"%>
 </body>
 </html>
