@@ -38,8 +38,6 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
-
-
   </dependencies>
   <build>
     <finalName>Hospital_Management_System_1</finalName>
