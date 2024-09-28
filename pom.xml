@@ -9,14 +9,14 @@
   <url>http://maven.apache.org</url>
   <dependencies>
 
-    <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+    <!-- Mysql connector jar file-->
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
       <version>8.0.33</version>
     </dependency>
 
-    <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+    <!--Servlet jar file-->
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>javax.servlet-api</artifactId>
@@ -24,14 +24,14 @@
       <scope>provided</scope>
     </dependency>
 
-    <!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
+    <!--JSTL jar file-->
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>jstl</artifactId>
       <version>1.2</version>
     </dependency>
 
-
+    <!--JUNIT jar file-->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>

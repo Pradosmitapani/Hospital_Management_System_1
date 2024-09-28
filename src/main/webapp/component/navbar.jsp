@@ -11,7 +11,7 @@
       
       <c:if test="${empty userObj }">
            <li class="nav-item">
-          <a class="navbar-brand text-white" aria-current="page" href="admin_login.jsp"><i class="fa-solid fa-right-to-bracket"></i>ADMIN</a>
+          <a class="navbar-brand text-white" aria-current="page" href="admin_login.jsp"><i class="fa-solid fa-right-to-bracket"></i> ADMIN</a>
         </li>
         
         <li class="nav-item">

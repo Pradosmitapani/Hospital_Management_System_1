@@ -6,7 +6,11 @@ public class User{
 	private String email;
 	private String password;
 
-//	Generate constructor using field
+	//Default constructor for admin
+	public User() {
+	}
+
+	//	Generate constructor using field
 	public User(String fullName, String email, String password) {
 		super();
 		this.fullName = fullName;

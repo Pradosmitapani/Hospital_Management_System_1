@@ -9,28 +9,36 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 @WebServlet("/user_register")
 public class UserRegister extends HttpServlet {
+
+    // Do post method call
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try{
-           String fullName = req.getParameter("fullName");
-           String email = req.getParameter("email");
-           String password = req.getParameter("password");
+            // 3 Value get in servlet
+            String fullName = req.getParameter("fullname");
+            String email = req.getParameter("email");
+            String password = req.getParameter("password");
 
-           User u = new User(fullName, email, password);
+            User u = new User(fullName, email, password);
 
-           UserDao dao = new UserDao(DBConnect.getConn());
+            UserDao dao = new UserDao(DBConnect.getConn());
 
-           boolean f = dao.register(u);
+            HttpSession session = req.getSession();
 
-           if(f){
-               System.out.println("Register successfully");
-           }else{
-               System.out.println("Register failed");
-           }
+            boolean f = dao.register(u);
+
+            if(f){
+                session.setAttribute("sucMsg", "Register successfully");//Success message show
+                resp.sendRedirect("signup.jsp");
+            }else{
+                session.setAttribute("errorMsg", "Something error on server");//Error message message show
+                resp.sendRedirect("signup.jsp");
+            }
 
 
         } catch (Exception e){

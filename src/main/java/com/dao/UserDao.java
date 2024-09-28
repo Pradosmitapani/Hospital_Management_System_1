@@ -19,6 +19,7 @@ public class UserDao {
         try{
             String sql = "insert into user_dtls(full_name,email,password) values(?,?,?)";
 
+            // Set the value in database
             PreparedStatement ps = conn.prepareStatement(sql);
             ps.setString(1, u.getFullName());
             ps.setString(2, u.getEmail());
@@ -26,6 +27,7 @@ public class UserDao {
 
             int i=ps.executeUpdate();
 
+            // If data successfully inserted then return true
             if(i==1){
                 f = true;
             }
@@ -33,6 +35,6 @@ public class UserDao {
         }catch (Exception e) {
             e.printStackTrace();
         }
-        return f;
+        return f; // If data successfully not inserted then return false
     }
 }
