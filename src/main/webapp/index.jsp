@@ -1,3 +1,6 @@
+<%@page import="com.db.DBConnect"%>
+<%@page import="java.sql.Connection"%>
+
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
@@ -8,7 +11,7 @@
     <%@ include file="component/allcss.jsp" %>
 
 
-
+<%--Shaddow in all page--%>
     <style type="text/css">
         .paint-card{
             box-shadow:0 0 10px 0 rgba(0,0,0,0.3);
@@ -17,6 +20,7 @@
 
 </head>
 <body>
+
 
 <%@ include file="component/navbar.jsp" %>
 
@@ -139,12 +143,7 @@
 
     </div>
 </div>
-
-
-
-
-
-
-
+<%--Footer--%>
+<%@include file="component/footer.jsp"%>
 </body>
 </html>

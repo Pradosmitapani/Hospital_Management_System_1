@@ -13,7 +13,7 @@ public class UserDao {
     }
 
     public boolean register (User u){
-        boolean f = false;
+       boolean f = false; //Something wrong on server
 
         try{
             String sql = "insert into user_dtls(full_name,email,password) values(?,?,?)";
