@@ -15,7 +15,6 @@
         <div class="card-body">
             <p class="fs-4 text-center">Doctor Login</p>
 
-
         </div>
 
     </div>
