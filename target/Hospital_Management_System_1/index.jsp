@@ -6,6 +6,6 @@
 </head>
 <body>
 <%@include file="component/navbar.jsp"%>
-<h1>Hello world</h1>
+
 </body>
 </html>
