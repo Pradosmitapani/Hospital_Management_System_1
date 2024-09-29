@@ -28,7 +28,7 @@
                         Admin
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="adminlogout">Logout</a></li>
+                        <li><a class="dropdown-item" href="../adminLogout">Logout</a></li>
                     </ul>
                 </div>
             </form>

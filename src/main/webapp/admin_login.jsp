@@ -32,9 +32,9 @@
                     <p class="fs-4 text-center">Admin Login</p>
 
                     <%--Session create--%>
-                    <c:if test="${not empty sucMsg}">
-                        <p class="text-center text-success fs-3">${sucMsg}</p>
-                        <c:remove var="sucMsg" scope="session"/>
+                    <c:if test="${not empty succMsg}">
+                        <p class="text-center text-success fs-3">${succMsg}</p>
+                        <c:remove var="succMsg" scope="session"/>
                     </c:if>
 
                     <c:if test="${not empty errorMsg}">
