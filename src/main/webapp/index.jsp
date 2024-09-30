@@ -25,6 +25,7 @@
 <%@ include file="component/navbar.jsp" %>
 
 <h1>Hello World</h1>
+<h1>This is a Push Example</h1>
 
 <!-- Carousel -->
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
