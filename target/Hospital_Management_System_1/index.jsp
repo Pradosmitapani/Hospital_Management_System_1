@@ -24,7 +24,7 @@
 
 <%@ include file="component/navbar.jsp" %>
 
-
+<h1>Hello World</h1>
 
 <!-- Carousel -->
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -35,7 +35,7 @@
     </div>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="img/doctor2.jpg" class="d-block w-100" alt="..." height="500px">
+            <img src="img/doctor.jpg" class="d-block w-100" alt="..." height="500px">
         </div>
         <div class="carousel-item">
             <img src="img/all.jpg" class="d-block w-100" alt="..." height="500px">
@@ -117,7 +117,7 @@
         <div class="col-md-3">
             <div class="card paint-card">
                 <div class="card-body text-center">
-                    <img src="img/doct12.jpg" width="255px" height="250px">
+                    <img src="img/doct7.jpg" width="255px" height="250px">
                     <p class="fw-bold fs-5">Dr.Samuani Simi</p>
                     <p class="fs-7">(Chief Doctor)</p>
                 </div>
