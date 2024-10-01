@@ -20,7 +20,7 @@
 
 </head>
 <body>
-
+<h1>Hello</h1>
 
 <%@ include file="component/navbar.jsp" %>
 
