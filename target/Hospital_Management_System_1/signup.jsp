@@ -47,16 +47,12 @@
 
                         <div class="mb-3">
 
-                            <label class="form-Label">Full Name</label> <input required
-
-                                                                                   name="fullname" type="text" class="form-control">
+                            <label class="form-Label">Full Name</label> <input required name="fullname" type="text" class="form-control">
 
                         </div>
                         <div class="mb-3">
 
-                            <label class="form-Label">Email</label> <input required
-
-                                                                               name="email" type="email" class="form-control">
+                            <label class="form-Label">Email</label> <input required name="email" type="email" class="form-control">
 
                         </div>
 
@@ -65,9 +61,7 @@
 
                             <label class="form-Label">Password</label>
 
-                            <input required
-
-                                   name="password" type="password" class="form-control">
+                            <input required name="password" type="password" class="form-control">
 
                         </div>
 
