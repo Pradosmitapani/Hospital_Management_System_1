@@ -1,6 +1,6 @@
 <%@page import="com.entity.Doctor"%>
 <%@page import="com.dao.DoctorDao"%>
-<%@page import="com.entity.Specalist"%>
+<%@page import="com.entity.Specialist"%>
 <%@page import="java.util.List"%>
 <%@page import="com.db.DBConnect"%>
 <%@page import="com.dao.SpecialistDao"%>
@@ -57,8 +57,8 @@
               <option value="">--select--</option>
 
               <% SpecialistDao dao=new SpecialistDao(DBConnect.getConn());
-                     List <Specalist> list=dao.getAllSpesialist();
-                     for (Specalist s:list)
+                     List <Specialist> list=dao.getAllSpesialist();
+                     for (Specialist s:list)
                        {
                          %>
                          <option><%=s.setSpecialistName()%></option>
@@ -73,8 +73,8 @@
 
               <%
                 SpecialistDao dao = new SpecialistDao(DBConnect.getConn());
-                List<Specalist> list = dao.getAllSpecalist();
-                for(Specalist s : list) {
+                List<Specialist> list = dao.getAllSpecalist();
+                for(Specialist s : list) {
               %>
 
               <option value="<%=s.getId()%>"><%=s.getSpecialistName()%></option>

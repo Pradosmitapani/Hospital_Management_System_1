@@ -2,7 +2,6 @@ package com.admin.servlet;
 
 import com.dao.SpecialistDao;
 import com.db.DBConnect;
-import com.entity.Specalist;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

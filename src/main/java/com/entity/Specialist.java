@@ -1,15 +1,15 @@
 package com.entity;
 
-public class Specalist {
+public class Specialist {
     private int id;
     private String specialistName;
 
-    public Specalist(){
+    public Specialist(){
         super();
 
     }
 
-    public Specalist(int id, String specialistName) {
+    public Specialist(int id, String specialistName) {
         super();
         this.id = id;
         this.specialistName = specialistName;
