@@ -10,7 +10,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Insert title here</title>
+  <title>Add Doctor</title>
   <%@include file="../component/allcss.jsp" %>
   <style type="text/css">
     .paint-card {
@@ -53,29 +53,22 @@
 
             <div class="mb-3">
               <label class="form-label">Specialist</label><select name="spec" required class="form-control">
-              <option>--select--</option>
+              <option value="">--select--</option>
 
               <%
                 SpecialistDao dao = new SpecialistDao(DBConnect.getConn());
                 List<Specalist> list = dao.getAllSpecialist();
-                for(Specalist s:list) {
+                for(Specalist s : list) {
               %>
-              <option><%=s.getSpecialistName()%></option>
+              <option value="<%=s.getId()%>"><%=s.getSpecialistName()%></option>
               <%
                 }
               %>
-
-              <option>Dentist</option>
-              <option>Cardiology</option>
-              <option>Dematology</option>
-              <option>Heratlogist</option>
-              <option>Fever</option>
-
             </select>
             </div>
 
             <div class="mb-3">
-              <label class="form-label">Email</label> <input type="text" required name="email" class="form-control">
+              <label class="form-label">Email</label> <input type="email" required name="email" class="form-control">
             </div>
 
             <div class="mb-3">
@@ -111,10 +104,9 @@
             </thead>
             <tbody>
             <%
-              DoctorDao dao2=new DoctorDao(DBConnect.getConn());
+              DoctorDao dao2 = new DoctorDao(DBConnect.getConn());
               List<Doctor> list2 = dao2.getAllDoctor();
-              for(Doctor d:list2)
-              {
+              for(Doctor d : list2) {
             %>
             <tr>
               <td><%=d.getFullName() %></td>

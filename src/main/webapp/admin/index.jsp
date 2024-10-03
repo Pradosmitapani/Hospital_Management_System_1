@@ -12,7 +12,9 @@
     </style>
 </head>
 <body>
+
 <%@include file="navbar.jsp"%>
+
 
 <div class="container p-5">
     <p class="text/center fs-3">Admin Dashboard</p>
