@@ -29,13 +29,13 @@
     </c:if>
 
     <c:if test="${not empty succMsg}">
-        <p class="fs-3 text-center text-danger"role="alert">${succMsg}</p>
+        <div class="fs-3 text-center text-success" role="alert">${succMsg}</div>
         <c:remove var="succMsg" scope="session" />
     </c:if>
 
     <div class="row">
         <div class="col-md-4">
-            <div class="card-paint-card">
+            <div class="card paint-card">
                 <div class="card-body text-center text-success">
                     <i class="fa-solid fa-user-doctor fa-3x"></i><br>
                     <p class="fs-4 text-center">
@@ -46,7 +46,7 @@
         </div>
 
             <div class="col-md-4">
-                <div class="card-paint-card">
+                <div class="card paint-card">
                     <div class="card-body text-center text-success">
                         <i class="fa-solid fa-user fa-3x"></i><br>
                         <p class="fs-4 text-center">
@@ -57,7 +57,7 @@
             </div>
 
             <div class="col-md-4">
-                <div class="card-paint-card">
+                <div class="card paint-card">
                     <div class="card-body text-center text-success">
                         <i class="fa-solid fa-calendar-check fa-3x"></i><br>
                         <p class="fs-4 text-center">
@@ -67,10 +67,10 @@
                 </div>
             </div>
 
-            <div class="col-md-4 mt-3">
-                <div class="card-paint-card" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <div class="col-md-4 mt-2">
+                <div class="card paint-card" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <div class="card-body text-center text-success">
-                        <i class="fa-regular fa-calendar-check"></i><br>
+                        <i class="fa-regular fa-calendar-check fa-3x"></i><br>
                         <p class="fs-4 text-center">
                             Specialist<br>34
                         </p>
@@ -81,7 +81,30 @@
         </div>
     </div>
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="">
 
+                    <div class="form-group">
+                        <label>Enter Specialist Name</label>
+                        <input type="text" name="specName" class="form-control">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 </body>
