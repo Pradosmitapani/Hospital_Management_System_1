@@ -59,6 +59,14 @@
                             <option>Dematology</option>
                             <option>Heratlogist</option>
                             <option>Fever</option>
+
+                            <% SpecialistDao dao = new SpecialistDao(DBConnect.getConn());
+                            List<Specialist> list = dao.getAllSpecialist();
+                            for(Specialist s:list)
+                                {%>
+                                       <option><%=s.getSpecalistName()%></option>
+                                <%}
+                            %>
                         </select>
                         </div>
 
