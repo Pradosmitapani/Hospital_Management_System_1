@@ -56,6 +56,21 @@
               <label class="form-label">Specialist</label><select name="spec" required class="form-control">
               <option value="">--select--</option>
 
+              <% SpecialistDao dao=new SpecialistDao(DBConnect.getConn());
+                     List <Specalist> list=dao.getAllSpesialist();
+                     for (Specalist s:list)
+                       {
+                         %>
+                         <option><%=s.setSpecialistName()%></option>
+                       <%
+                       }
+
+                         %>
+
+              <div class="mb-3">
+                <label class="form-label">Email</label><select name="spec" required class="form-control">
+                <option value="">--select--</option>
+
               <%
                 SpecialistDao dao = new SpecialistDao(DBConnect.getConn());
                 List<Specalist> list = dao.getAllSpecalist();
