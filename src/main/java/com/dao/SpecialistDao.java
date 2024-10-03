@@ -28,12 +28,10 @@ public class SpecialistDao {
             if (i == 1) {
                 f = true;
             }
-
         } catch (Exception e) {
 
             e.printStackTrace();
         }
-
         return f;
     }
 }

@@ -1,6 +1,6 @@
 <%@page import="com.entity.Doctor"%>
 <%@page import="com.dao.DoctorDao"%>
-<%@page import="com.entity.Specalist"%>
+<%@page import="com.entity.Specialist"%>
 <%@page import="java.util.List"%>
 <%@page import="com.db.DBConnect"%>
 <%@page import="com.dao.SpecialistDao"%>
@@ -56,10 +56,25 @@
               <label class="form-label">Specialist</label><select name="spec" required class="form-control">
               <option value="">--select--</option>
 
+              <% SpecialistDao dao=new SpecialistDao(DBConnect.getConn());
+                     List <Specialist> list=dao.getAllSpesialist();
+                     for (Specialist s:list)
+                       {
+                         %>
+                         <option><%=s.setSpecialistName()%></option>
+                       <%
+                       }
+
+                         %>
+
+              <div class="mb-3">
+                <label class="form-label">Email</label><select name="spec" required class="form-control">
+                <option value="">--select--</option>
+
               <%
                 SpecialistDao dao = new SpecialistDao(DBConnect.getConn());
-                List<Specalist> list = dao.getAllSpecalist();
-                for(Specalist s : list) {
+                List<Specialist> list = dao.getAllSpecalist();
+                for(Specialist s : list) {
               %>
 
               <option value="<%=s.getId()%>"><%=s.getSpecialistName()%></option>
