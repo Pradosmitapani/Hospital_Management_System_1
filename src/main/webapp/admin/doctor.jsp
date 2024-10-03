@@ -4,6 +4,7 @@
 <%@page import="java.util.List"%>
 <%@page import="com.db.DBConnect"%>
 <%@page import="com.dao.SpecialistDao"%>
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -57,9 +58,10 @@
 
               <%
                 SpecialistDao dao = new SpecialistDao(DBConnect.getConn());
-                List<Specalist> list = dao.getAllSpecialist();
+                List<Specalist> list = dao.getAllSpecalist();
                 for(Specalist s : list) {
               %>
+
               <option value="<%=s.getId()%>"><%=s.getSpecialistName()%></option>
               <%
                 }
