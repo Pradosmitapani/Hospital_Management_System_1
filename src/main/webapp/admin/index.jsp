@@ -1,8 +1,7 @@
-
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@page isELIgnored="false"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page isELIgnored="false"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,7 +16,7 @@
 </head>
 <body>
 <%@include file="navbar.jsp" %>
-<c:if test="${empty adminObj}">
+<c:if test="${ empty adminObj }">
     <c:redirect url="../admin_login.jsp"></c:redirect>
 </c:if>
 
@@ -90,17 +89,19 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form action="">
+                <form action="../addSpecialist" method="post">
 
                     <div class="form-group">
                         <label>Enter Specialist Name</label>
                         <input type="text" name="specName" class="form-control">
                     </div>
+                    <div class="text-center mt-3">
+                    <button type="submit" class="btn btn-primary">ADD</button>
+                    </div>
                 </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
             </div>
         </div>
     </div>
