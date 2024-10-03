@@ -3,6 +3,8 @@ public class Specialist {
     private int id;
     private String specialistName;
 
+
+
     public Specialist() {
         super();
         // TODO Auto-generated constructor stub
@@ -24,4 +26,6 @@ public class Specialist {
     public void setSpecalistName(String specialistName) {
         this.specialistName = specialistName;
     }
+
+
 }
