@@ -36,26 +36,28 @@ public class SpecialistDao {
         }
         return f;
     }
-    public List<Specialist> getSpecialist()
+    public List<Specialist> getAllSpecialists()
     {
-        List<Specialist> list = new ArrayList<Specialist>();
+        List<Specialist> list=new ArrayList<Specialist>();
         Specialist s=null;
 
         try {
-            String sql = "select * from specialist";
-            PreparedStatement ps = conn.prepareStatement(sql);
+            String sql="select * from specialist";
+            PreparedStatement ps=conn.prepareStatement(sql);
 
-            ResultSet rs = ps.executeQuery();
-
-            while(rs.next()) {
-                s = new Specialist();
+            ResultSet rs=ps.executeQuery();
+            while (rs.next())
+            {
+                s=new Specialist();
                 s.setId(rs.getInt(1));
                 s.setSpecalistName(rs.getString(2));
                 list.add(s);
             }
-        } catch (Exception e) {
+
+        }catch (Exception e){
             e.printStackTrace();
         }
+
         return list;
     }
 }

@@ -55,7 +55,17 @@
                         <div class="mb-3">
                             <label class="form-label">Specialist</label><select name="spec" required class="form-control">
                             <option>--select--</option>
-                            <option>Dentist</option>
+
+                            <% SpecialistDao dao=new SpecialistDao(DBConnect.getConn());
+                            List<Specialist> list=dao.getAllSpecalist();
+                            for(Specialist s:list)
+                            {%>
+                                <option><%=s.getSpecialistName()%></option>
+                            <%}
+
+                            %>
+
+
 
                         </select>
                         </div>
