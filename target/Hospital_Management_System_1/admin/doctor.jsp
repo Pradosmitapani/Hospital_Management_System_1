@@ -12,7 +12,7 @@
     <meta charset="UTF-8">
     <title>Insert title here</title>
     <%@include file="../component/allcss.jsp" %>
-    <style type="text/css">
+    <style text="text/css">
         .paint-card {
             box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
         }
@@ -23,7 +23,7 @@
 <div class="container-fluid p-3">
     <div class="row">
 
-        <div class="col-md-5 offset-md-4">
+        <div class="col-md-4 ">
             <div class="card paint-card">
                 <div class="card-body">
 
@@ -34,11 +34,12 @@
                     </c:if>
 
                     <c:if test="${not empty succMsg }">
+                        <div class="fs-3 text-center text-success" role="alert">${succMsg}</div>
                         <p class="fs-3 text-center text-primary">${succMsg}</p>
                         <c:remove var="succMsg" scope="session" />
                     </c:if>
 
-                    <form action="../addDoctor" method="post">
+                    <form action="add_doctor" method="post">
                         <div class="mb-3">
                             <label class="form-label">Full Name</label><input type="text" required name="fullname" class="form-control">
                         </div>
@@ -48,7 +49,7 @@
                         </div>
 
                         <div class="mb-3">
-                            <label class="form-label">Qualification</label><input type="text" required name="qualification" class="form-control">
+                            <label class="form-label">Qualification</label><input required   name="quali" type="text" class="form-control">
                         </div>
 
                         <div class="mb-3">
