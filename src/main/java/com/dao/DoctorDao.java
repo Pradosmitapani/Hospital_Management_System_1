@@ -40,4 +40,30 @@ public class DoctorDao {
         }
         return f;
     }
+
+    public List<Doctor> getAllDoctor() {
+        List<Doctor> list = new ArrayList<>();  // Initialize the list
+        Doctor d = null;
+        try {
+            String sql = "select * from doctor order by id desc";
+            PreparedStatement ps = conn.prepareStatement(sql);
+
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()) {
+                d = new Doctor();
+                d.setId(rs.getInt(1));
+                d.setFullName(rs.getString(2));
+                d.setDob(rs.getString(3));
+                d.setQualification(rs.getString(4));
+                d.setSpecialist(rs.getString(5));
+                d.setEmail(rs.getString(6));
+                d.setMobNo(rs.getString(7));
+                d.setPassword(rs.getString(8));
+                list.add(d);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return list;
+    }
 }

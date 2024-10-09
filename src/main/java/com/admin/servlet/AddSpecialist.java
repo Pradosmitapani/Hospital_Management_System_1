@@ -33,7 +33,7 @@ public class AddSpecialist extends HttpServlet{
         }else {
 
             session.setAttribute("errorMsg", "Something wrong on server");
-            resp.sendRedirect("admin_login.jsp");
+            resp.sendRedirect("admin/index.jsp");
         }
 
     }

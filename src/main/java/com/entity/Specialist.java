@@ -9,7 +9,8 @@ public class Specialist {
         super();
         // TODO Auto-generated constructor stub
     }
-    public Specialist(int id, String specalistName) {
+    public Specialist(int id, String specialistName)
+    {
         super();
         this.id = id;
         this.specialistName = specialistName;
@@ -20,10 +21,12 @@ public class Specialist {
     public void setId(int id) {
         this.id = id;
     }
-    public String getSpecalistName() {
+    public String getSpecialistName() {
+
         return specialistName;
     }
-    public void setSpecalistName(String specialistName) {
+    public void setSpecialistName(String specialistName) {
+
         this.specialistName = specialistName;
     }
 

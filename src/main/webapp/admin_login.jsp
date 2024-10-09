@@ -10,15 +10,17 @@
     <meta charset="UTF-8">
     <title>Admin Login Page</title>
     <%@include file="component/allcss.jsp"%>
+
+    <%--Shaddow in all page--%>
+    <style type="text/css">
+        .paint-card {
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+        }
+    </style>
 </head>
 <body>
 <%@include file="component/navbar.jsp"%>
-<%--Shaddow in all page--%>
-<style type="text/css">
-    .paint-card {
-        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-    }
-</style>
+
 <div class="container p-5">
 
     <div class="row">

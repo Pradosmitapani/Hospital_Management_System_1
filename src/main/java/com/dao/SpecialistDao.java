@@ -36,7 +36,7 @@ public class SpecialistDao {
         }
         return f;
     }
-    public List<Specialist> getAllSpecialists()
+    public List<Specialist> getAllSpecialist()
     {
         List<Specialist> list=new ArrayList<Specialist>();
         Specialist s=null;
@@ -50,7 +50,7 @@ public class SpecialistDao {
             {
                 s=new Specialist();
                 s.setId(rs.getInt(1));
-                s.setSpecalistName(rs.getString(2));
+                s.setSpecialistName(rs.getString(2));
                 list.add(s);
             }
 

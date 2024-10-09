@@ -20,9 +20,6 @@ public class AddDoctor extends HttpServlet {
 
 
 
-
-
-
         try {
             String fullName=req.getParameter("fullname");
             String dob =req.getParameter("dob");
