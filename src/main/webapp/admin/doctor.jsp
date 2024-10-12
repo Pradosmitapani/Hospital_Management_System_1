@@ -1,7 +1,11 @@
-<%@ page import="com.db.DBConnect" %>
-<%@ page import="com.dao.SpecialistDao" %>
+
+<%@ page import="com.dao.DoctorDao" %>
 <%@ page import="com.entity.Specialist" %>
-<%@ page import="java.util.List" %>  <!-- Import java.util.List -->
+<%@ page import="com.entity.Doctor" %>
+<%@ page import="com.util.DBConnect" %>
+<%@ page import="java.util.List" %>
+<%@ page import="com.dao.SpecialistDao" %>
+
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
 <!DOCTYPE html>
