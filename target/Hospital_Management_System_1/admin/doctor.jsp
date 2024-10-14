@@ -66,7 +66,7 @@
 
                                     for (Specialist s : list) {
                                 %>
-                                <option><%= s.getSpecialistName() %></option>
+                                <option> <%= s.getSpecialistName() %> </option>
 
                                 <%
                                     }
