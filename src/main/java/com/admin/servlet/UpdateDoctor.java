@@ -5,12 +5,15 @@ import com.db.DBConnect;
 import com.entity.Doctor;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
+
+@WebServlet("/updateDoctor")
 public class UpdateDoctor  extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -33,9 +36,9 @@ public class UpdateDoctor  extends HttpServlet {
 
             DoctorDao dao=new DoctorDao(DBConnect.getConn());
             HttpSession session=req.getSession();
-            if(dao.registerDoctor(d)) {
+            if(dao.updateDoctor(d)) {
 
-                session.setAttribute("succMsg", "Doctor Added Successfully");
+                session.setAttribute("succMsg", "Doctor Update Successfully..");
                 resp.sendRedirect("admin/doctor.jsp");
 
 

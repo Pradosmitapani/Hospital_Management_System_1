@@ -45,7 +45,7 @@
                         Doctor d=dao2.getDoctorById(id);
                     %>
 
-                    <form action="../addDoctor" method="post">
+                    <form action="../updateDoctor" method="post">
                         <div class="mb-3">
                             <label class="form-label">Full Name</label>
                             <input type="text" required name="fullname" class="form-control" value="<%=d.getFullName()%>">
