@@ -95,6 +95,7 @@
                             <label class="form-label">Password</label>
                             <input type="password" value="<%=d.getPassword()%>" required name="password" class="form-control">
                         </div>
+                        <input type="hidden" name ="id" value="<%=d.getId()%>">
 
                         <button type="submit" class="btn btn-primary col-md-12" >Update</button>
                     </form>
