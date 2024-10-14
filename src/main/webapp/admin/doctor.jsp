@@ -126,7 +126,7 @@
                             <td><%=d.getSpecialist() %></td>
                             <td><%=d.getEmail() %></td>
                             <td><%=d.getMobNo() %></td>
-                            <td><a href="#" class="btn btn-sm btn-primary">Edit</a></td>
+                            <td><a href="edit_doctor.jsp" class="btn btn-sm btn-primary">Edit</a></td>
                             <td><a href="#" class="btn btn-sm btn-danger">Delete</a></td>
                         </tr>
                         <%}
