@@ -90,7 +90,7 @@
                             <input type="password" required name="password" class="form-control">
                         </div>
 
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-primary col-md-12" >Update</button>
                     </form>
 
                 </div>
