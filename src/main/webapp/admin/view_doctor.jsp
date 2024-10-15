@@ -30,6 +30,17 @@
             <div class="card-paint-card">
                 <div class="card-body">
                     <p class="fs-3 text-center" >Doctor Details</p>
+
+                    <c:if test="${not empty errorMsg}">
+                        <p class="fs-3 text-center text-danger">${errorMsg}</p>
+                        <c:remove var="errorMsg" scope="session"/>
+                    </c:if>
+
+                    <c:if test="${not empty succMsg}">
+                        <p class="fs-3 text-center text-danger">${succMsg}</p>
+                        <c:remove var="succMsg" scope="session"/>
+                    </c:if>
+
                     <table class="table">
                         <thead>
                         <tr>
