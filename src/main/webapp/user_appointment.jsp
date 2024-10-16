@@ -100,7 +100,19 @@
                         </select>
                         </div>
 
-                        <div class="col-md-12"></div>
+                        <div class="col-md-12">
+                            <label>Full Address</label>
+                            <textarea required name="address" class="form-control" rows="3"
+                                      cols=""></textarea>
+                        </div>
+
+                        <c:if test="${empty userObj}">
+                            <a href="ulogin.jsp"
+                               class="col-md-6 offset-md-3 btn btn-success">Submit</a>
+                        </c:if>
+                        <c:if test="${not empty userObj}">
+                            <button class="col-md-6 offset-md-3 btn btn-success">Submit</button>
+                        </c:if>
                     </form>
                 </div>
             </div>
