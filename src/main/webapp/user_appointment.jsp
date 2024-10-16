@@ -39,7 +39,7 @@
 <div class="container-p-3">
     <div class="row">
         <div class="col-md-6 p-5">
-            <img alt="" src="img/doct.jpg">
+            <img alt="" src="img/doct4.jpg">
         </div>
         <div class="col-md-6">
             <div class="card paint-card">

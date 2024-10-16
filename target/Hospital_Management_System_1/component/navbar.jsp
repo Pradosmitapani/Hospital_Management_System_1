@@ -19,16 +19,16 @@
         </li>
         
         <li class="nav-item">
-          <a class="navbar-brand text-white" aria-current="page" href="#">APPOINTMENT</a>
+          <a class="nav-link-active" aria-current="page" href="user_appointment.jsp">APPOINTMENT</a>
         </li>
         
         <li class="nav-item">
-          <a class="navbar-brand text-white" aria-current="page" href="user_login.jsp">USER</a>
+          <a class="nav-link-active" aria-current="page" href="user_login.jsp">USER</a>
         </li>
       </c:if>
       
         <c:if test="${not empty userObj }">
-        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">APPOINTMENT</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="user_appointment.jsp">APPOINTMENT</a></li>
         
         <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">VIEW APPOINTMENT</a>
         
