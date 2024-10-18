@@ -9,6 +9,8 @@
 <%@page isELIgnored="false" %>
 <%@page import="com.entity.Doctor"%>
 <%@page import="java.util.List"%>
+<%@ page import="com.dao.DoctorDao" %>
+<%@ page import="com.db.DBConnect" %>
 
 <%@page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" %>
 <! DOCTYPE html>
@@ -39,7 +41,7 @@
 <div class="container-p-3">
     <div class="row">
         <div class="col-md-6 p-5">
-            <img alt="" src="img/doct4.jpg">
+            <img alt="" src="img/doct1.jpg">
         </div>
         <div class="col-md-6">
             <div class="card paint-card">
@@ -96,7 +98,21 @@
                             <label for="inputPassword4" class="form-label">Doctor</label><select
                             required class="form-control" name="doct">
                             <option value="">--select--</option>
-                            <option value="">Doctor Name</option>
+
+                            <%DoctorDao dao=new DoctorDao(DBConnect.getConn());
+                            List<Doctor> list = dao.getAllDoctor();
+                              for (Doctor d:list){
+                                  %>
+
+                            <option value="<%=d.getId()%>"><%=d.getFullName()%>(<%=d.getSpecialist()%>)</option>
+
+
+                                 <%
+                              }
+                            %>
+
+
+
                         </select>
                         </div>
 
@@ -107,9 +123,10 @@
                         </div>
 
                         <c:if test="${empty userObj}">
-                            <a href="ulogin.jsp"
+                            <a href="login.jsp"
                                class="col-md-6 offset-md-3 btn btn-success">Submit</a>
                         </c:if>
+
                         <c:if test="${not empty userObj}">
                             <button class="col-md-6 offset-md-3 btn btn-success">Submit</button>
                         </c:if>
