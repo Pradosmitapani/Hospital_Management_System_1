@@ -42,7 +42,7 @@ public class DoctorDao {
     }
 
     public List<Doctor> getAllDoctor() {
-        List<Doctor> list = new ArrayList<>();  // Initialize the list
+        List<Doctor> list = new ArrayList<Doctor>();  // Initialize the list
         Doctor d = null;
         try {
             String sql = "select * from doctor order by id desc";

@@ -35,12 +35,12 @@ public class AddDoctor extends HttpServlet {
             HttpSession session=req.getSession();
             if(dao.registerDoctor(d)) {
 
-                session.setAttribute("succMsg", "Doctor Added Successfully");
+                session.setAttribute("succMsg", "Doctor Added Successfully..");
                 resp.sendRedirect("admin/doctor.jsp");
 
 
             }else {
-                session.setAttribute("errorMsg", "something wrong");
+                session.setAttribute("errorMsg", "something wrong on server");
                 resp.sendRedirect("admin/doctor.jsp");
 
 
