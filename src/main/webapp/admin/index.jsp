@@ -56,7 +56,7 @@
              <div class="col-md-4">
                  <div class="card paint-card">
                      <div class="card-body text-center text-success">
-                         <i class="far fa-calender-check fa-3x"></i><br>
+                         <i class="fa-regular fa-calendar-check fa-3x"></i><br>
                          <p class="fs-4 text-center">
                              Total Appointment <br>450
                          </p>
@@ -66,7 +66,7 @@
              <div class="col-md-4 mt-2">
                  <div class="card paint-card" data-bs-toggle="modal" data-bs-target="#exampleModal">
                      <div class="card-body text-center text-success">
-                         <i class="far fa-calender-check fa-3x"></i><br>
+                         <i class="fa-regular fa-calendar-check fa-3x"></i><br>
                          <p class="fs-4 text-center">Specialist <br>12</p>
                      </div>
                  </div>
