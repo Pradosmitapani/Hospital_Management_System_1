@@ -40,7 +40,7 @@
 </div>
 <div class="container-p-3">
     <div class="row">
-        <div class="col-md-6 p-5">
+        <div class="col-md-6 p-8">
             <img alt="" src="img/doct1.jpg">
         </div>
         <div class="col-md-6">
