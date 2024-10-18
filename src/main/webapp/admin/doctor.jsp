@@ -64,9 +64,11 @@
                                     SpecialistDao dao = new SpecialistDao(DBConnect.getConn());
                                     List<Specialist> list = dao.getAllSpecialist();
 
-                                    for (Specialist s : list) {
-                                %>
+                                    for (Specialist s : list)
+                                    {%>
+
                                 <option> <%= s.getSpecialistName() %> </option>
+
 
                                 <%
                                     }
