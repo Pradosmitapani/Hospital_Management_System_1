@@ -32,7 +32,7 @@ public class UpdateDoctor  extends HttpServlet {
 
             int id = Integer.parseInt(req.getParameter("id"));
 
-            Doctor d = new Doctor( fullName,dob,qualification,spec,email,mobno,password);
+            Doctor d = new Doctor( id,fullName,dob,qualification,spec,email,mobno,password);
 
             DoctorDao dao=new DoctorDao(DBConnect.getConn());
             HttpSession session=req.getSession();

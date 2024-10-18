@@ -117,7 +117,26 @@
                            </tr>
                         </thead>
                         <tbody>
-
+                          <%
+                              DoctorDao dao2 = new DoctorDao(DBConnect.getConn());
+                              List<Doctor> list2 =dao2.getAllDoctor();
+                              for (Doctor d:list2)
+                              {%>
+                                     <tr>
+                                         <td><%=d.getFullName()%></td>
+                                         <td><%=d.getDob()%></td>
+                                         <td><%=d.getQualification()%></td>
+                                         <td><%=d.getSpecialist()%></td>
+                                         <td><%=d.getEmail()%></td>
+                                         <td><%=d.getMobNo()%></td>
+                                         <td>
+                                             <a href="edit_doctor.jsp?id=<%=d.getId()%>"
+                                                class="btn btn-sm btn-primary">Edit</a>
+                                             <a href="#" class="btn btn-sm btn-danger">Delete</a>
+                                         </td>
+                                     </tr>
+                              <%}
+                          %>
 
 
                         </tbody>
