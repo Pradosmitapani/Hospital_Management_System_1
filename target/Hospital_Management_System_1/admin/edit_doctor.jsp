@@ -35,7 +35,7 @@
                     </c:if>
 
                     <c:if test="${not empty succMsg}">
-                        <p class="fs-3 text-center text-danger">${succMsg}</p>
+                        <p class="fs-3 text-center text-success" role="alert">${succMsg}</p>
                         <c:remove var="succMsg" scope="session"/>
                     </c:if>
 
