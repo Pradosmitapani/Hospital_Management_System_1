@@ -33,14 +33,15 @@ public class AppointmentServlet extends HttpServlet {
 
         Appointment ap=new Appointment(userId,fullName,gender,age,appoint_date,email,phno,diseases,doctor_id,address,"Pending");
         AppointmentDAO dao=new AppointmentDAO(DBConnect.getConn());
-        HttpSession se=req.getSession();
+        HttpSession session=req.getSession();
 
         if (dao.addAppointment(ap)) {
             session.setAttribute("succMsg", "Appointment Successfully");
             resp.sendRedirect("user_appointment.jsp");
 
         } else {
-
+            session.setAttribute("errorMsg", "something wrong on server");
+            resp.sendRedirect("user_appointment.jsp");
         }
     }
 }
