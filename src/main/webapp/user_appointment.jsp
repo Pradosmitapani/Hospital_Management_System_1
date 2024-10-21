@@ -123,7 +123,7 @@
                         </div>
 
                         <c:if test="${empty userObj}">
-                            <a href="ulogin.jsp"
+                            <a href="user_login.jsp"
                                class="col-md-6 offset-md-3 btn btn-success">Submit</a>
                         </c:if>
 
