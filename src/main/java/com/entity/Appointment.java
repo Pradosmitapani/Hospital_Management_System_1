@@ -1,16 +1,18 @@
 package com.entity;
 
+import java.time.LocalDate; // Use LocalDate for the appointment date in Java 8+
+
 public class Appointment {
     private int id;
     private int userId;
     private String fullName;
     private String gender;
-    private String age;
-    private String appoinDate;
+    private int age;  // Change to int
+    private LocalDate appoint_date;  // Change to LocalDate for date
     private String email;
     private String phNo;
     private String diseases;
-    private int doctorId;
+    private int doctorId; // Keep doctorId as int
     private String address;
     private String status;
 
@@ -18,12 +20,12 @@ public class Appointment {
         super();
     }
 
-    public Appointment(int userId, String fullName, String gender, String age, String appoinDate, String email, String phNo, String diseases, int doctorId, String address, String status) {
+    public Appointment(int userId, String fullName, String gender, int age, LocalDate appoinDate, String email, String phNo, String diseases, int doctorId, String address, String status) {
         this.userId = userId;
         this.fullName = fullName;
         this.gender = gender;
         this.age = age;
-        this.appoinDate = appoinDate;
+        this.appoint_date = appoinDate;
         this.email = email;
         this.phNo = phNo;
         this.diseases = diseases;
@@ -64,20 +66,20 @@ public class Appointment {
         this.gender = gender;
     }
 
-    public String getAge() {
+    public int getAge() {  // Updated to int
         return age;
     }
 
-    public void setAge(String age) {
+    public void setAge(int age) {  // Updated to int
         this.age = age;
     }
 
-    public String getAppoinDate() {
-        return appoinDate;
+    public LocalDate getAppoinDate() {  // Updated to LocalDate
+        return appoint_date;
     }
 
-    public void setAppoinDate(String appoinDate) {
-        this.appoinDate = appoinDate;
+    public void setAppoinDate(LocalDate appoinDate) {  // Updated to LocalDate
+        this.appoint_date = appoinDate;
     }
 
     public String getEmail() {
@@ -104,11 +106,11 @@ public class Appointment {
         this.diseases = diseases;
     }
 
-    public String getDoctorId() {
+    public int getDoctorId() {  // Kept as int
         return doctorId;
     }
 
-    public void setDoctorId(int doctorId) {
+    public void setDoctorId(int doctorId) {  // Kept as int
         this.doctorId = doctorId;
     }
 
