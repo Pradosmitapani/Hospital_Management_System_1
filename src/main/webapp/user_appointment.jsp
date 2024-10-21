@@ -55,7 +55,7 @@
                         <p class="fs-4 text-center text-success">${succMsg}</p>
                         <c:remove var="succMsg" scope="session"/>
                     </c:if>
-                    <form class="row g-3" action="add_appoint" method="post">
+                    <form class="row g-3" action="appAppointment" method="post">
                         <input type="hidden" name="userid" value="${userObj.id}">
 
                         <div class="col-md-6">
@@ -137,6 +137,7 @@
     </div>
 
 </div>
+<%@include file="component/footer.jsp"%>
 </body>
 </html>
 
