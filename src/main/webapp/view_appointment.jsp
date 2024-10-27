@@ -22,7 +22,7 @@
 <div class="container-fulid backImg p-5">
     <p class="text=-center fs-2 text-white"></p>
 </div>
-<div class="container p-3"></div>
+<div class="container p-3">
 <div class="row">
     <div class="col-md-9">
         <div class=" card paint-card">

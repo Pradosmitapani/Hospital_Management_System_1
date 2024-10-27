@@ -2,7 +2,7 @@
 <%@page isELIgnored="false"%>
 <nav class="navbar navbar-expand-lg navbar-dark bg-success">
   <div class="container-fluid">
-    <a class="navbar-brand text-white" href="index.jsp"><i class="fa-solid fa-house-medical"></i>MEDI HOME</a>
+    <a class="nav-link active text-white" href="index.jsp"><i class="fa-solid fa-house-medical"></i>MEDI HOME</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -11,19 +11,19 @@
       
       <c:if test="${empty userObj }">
            <li class="nav-item">
-          <a class="navbar-brand text-white" aria-current="page" href="admin_login.jsp"><i class="fa-solid fa-right-to-bracket"></i> ADMIN</a>
+          <a class="nav-link active" aria-current="page" href="admin_login.jsp"><i class="fa-solid fa-right-to-bracket"></i> ADMIN</a>
         </li>
         
         <li class="nav-item">
-          <a class="navbar-brand text-white" aria-current="page" href="doctor_login.jsp">DOCTOR</a>
+          <a class="nav-link active" aria-current="page" href="doctor_login.jsp">DOCTOR</a>
         </li>
         
         <li class="nav-item">
-          <a class="navbar-brand text-white" aria-current="page" href="user_appointment.jsp">APPOINTMENT</a>
+          <a class="nav-link active" aria-current="page" href="user_appointment.jsp">APPOINTMENT</a>
         </li>
         
         <li class="nav-item">
-          <a class="navbar-brand text-white" aria-current="page" href="user_login.jsp">USER</a>
+          <a class="nav-link active" aria-current="page" href="user_login.jsp">USER</a>
         </li>
       </c:if>
       
@@ -33,7 +33,7 @@
         <li class="nav-item"><a class="nav-link active" aria-current="page" href="view_appointment.jsp">VIEW APPOINTMENT</a>
         
         <div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+  <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
    <i class="fa-solid fa-circle-user"></i>${userObj.fullName } 
   </button>
   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">

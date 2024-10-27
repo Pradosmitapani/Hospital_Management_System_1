@@ -40,7 +40,7 @@
 </div>
 <div class="container-p-3">
     <div class="row">
-        <div class="col-md-6 p-8">
+        <div class="col-md-6 p-5">
             <img alt="" src="img/doct1.jpg">
         </div>
         <div class="col-md-6">
@@ -52,7 +52,7 @@
                         <c:remove var="errormsg" scope="session"/>
                     </c:if>
                     <c:if test="${not empty succMsg}">
-                        <p class="fs-5 text-center text-success">${succMsg}</p>
+                        <p class="fs-4 text-center text-success">${succMsg}</p>
                         <c:remove var="succMsg" scope="session"/>
                     </c:if>
                     <form class="row g-3" action="appAppointment" method="post">
@@ -137,6 +137,7 @@
     </div>
 
 </div>
+<%@include file="component/footer.jsp"%>
 </body>
 </html>
 
