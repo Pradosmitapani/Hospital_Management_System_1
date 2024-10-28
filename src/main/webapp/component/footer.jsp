@@ -1,3 +1,3 @@
-<div class="container-fluid p-1 bg-custom text-center text-white">
+<div class="container-fluid p-1 bg-success text-center text-white">
     <p>@copyright hospital.com</p>
 </div>
