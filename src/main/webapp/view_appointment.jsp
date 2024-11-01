@@ -22,7 +22,7 @@
 
         .backImg {
             background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),
-            url("img/hospital.jpg");
+            url("img/4pp.jpg");
             height: 20vh;
             width: 100%;
             background-size: cover;
@@ -94,7 +94,7 @@
             </div>
         </div>
         <div class="col-md-3 p-3">
-            <img alt="" src="img/doct.jpg">
+            <img alt="" src="img/doct1.jpg">
         </div>
     </div>
 </div>
