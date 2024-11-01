@@ -94,7 +94,7 @@
             </div>
         </div>
         <div class="col-md-3 p-3">
-            <img alt="" src="img/doct1.jpg">
+            <img alt="" src="img/doct2.jpg">
         </div>
     </div>
 </div>
