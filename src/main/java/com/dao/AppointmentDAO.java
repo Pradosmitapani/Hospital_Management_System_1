@@ -5,7 +5,8 @@ import com.entity.Appointment;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 
-public class AppointmentDAO {
+public class
+AppointmentDAO {
 
     private Connection conn;
 
