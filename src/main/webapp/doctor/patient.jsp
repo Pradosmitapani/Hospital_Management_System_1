@@ -6,6 +6,8 @@
 <%@page import="com.dao.AppointmentDAO"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
          pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@page isELIgnored="false"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,7 +21,14 @@
   </style>
 </head>
 <body>
+
+
+<c:if test="${ empty adminObj }">
+  <c:redirect url="../doctor_login.jsp"></c:redirect>
+</c:if>
+
 <%@include file="navbar.jsp"%>
+
 <div class="col-md-12">
   <div class="card paint-card">
     <div class="card-body">
@@ -41,12 +50,12 @@
         </thead>
         <tbody>
         <%
+          Doctor d=(Doctor)session.getAttribute("doctObj");
           AppointmentDAO dao = new AppointmentDAO(DBConnect.getConn());
-          DoctorDao dao2 = new DoctorDao(DBConnect.getConn());
-          List<Appointment> list = dao.getAllAppointment();
-          for (Appointment ap : list) {
-            Doctor d = dao2.getDoctorById(ap.getDoctorId());
-        %>
+          List<Appointment> list=dao.getAllAppointmentByDoctorLogin(d.getId());
+
+          for(Appointment ap : list){
+            %>
         <tr>
           <th><%=ap.getFullName()%></th>
           <td><%=ap.getGender()%></td>
@@ -55,13 +64,30 @@
           <td><%=ap.getEmail()%></td>
           <td><%=ap.getPhNo()%></td>
           <td><%=ap.getDiseases()%></td>
-          <td><%=d.getFullName()%></td>
-          <td><%=ap.getAddress()%></td>
           <td><%=ap.getStatus()%></td>
+          <td>
+
+            <%
+
+             if("Pending".equals(ap.getStatus()))
+             {%>
+            <a href="comment.jsp?id=<%=ap.getId()%>"
+               class="btn btn-success btn-sm">comment</a>
+             <%}else{%>
+                <a href="#"
+               class="btn btn-success btn-sm disabled">comment</a>
+
+             <%}
+             %>
+
+          </td>
         </tr>
+
         <%
+
           }
-        %>
+          %>
+
 
 
         </tbody>

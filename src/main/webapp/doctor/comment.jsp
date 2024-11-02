@@ -17,7 +17,7 @@
 
     .backImg {
       background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),
-      url("../img/hospital.jpg");
+      url("../img/4pp.jpg");
       height: 20vh;
       width: 100%;
       background-size: cover;
@@ -33,6 +33,7 @@
 
 
 <%@include file="navbar.jsp"%>
+
 <div class="container-fulid backImg p-5">
   <p class="text-center fs-2 text-white"></p>
 </div>
