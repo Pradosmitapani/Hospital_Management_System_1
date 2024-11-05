@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index Page</title>
+    <--! Add Css from component module -->
     <%@ include file="component/allcss.jsp" %>
 
     <!-- CSS for styling -->
@@ -57,8 +58,9 @@
     </style>
 
 </head>
+<!-- Body part start -->
 <body>
-
+<!-- Add navbar from component module -->
 <%@ include file="component/navbar.jsp" %>
 
 <!-- Carousel -->
@@ -68,6 +70,7 @@
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
+    <!-- Add First image in Carousel -->
     <div class="carousel-inner">
         <div class="carousel-item active">
             <img src="img/doctor.jpg" class="d-block w-100" alt="Slide 1" height="500px">
@@ -76,6 +79,7 @@
                 <p style="color: #f1f1f1;">Providing comprehensive healthcare with dedication and innovation.</p>
             </div>
         </div>
+        <!-- Add Second image in Carousel -->
         <div class="carousel-item">
             <img src="img/hosp1.jpg" class="d-block w-100" alt="Slide 2" height="500px">
             <div class="carousel-caption d-none d-md-block">
@@ -83,6 +87,7 @@
                 <p style="color: #f1f1f1;">Our staff is dedicated to ensuring your well-being.</p>
             </div>
         </div>
+        <!-- Add Third image in Carousel -->
         <div class="carousel-item">
             <img src="img/doct88.jpg" class="d-block w-100" alt="Slide 3" height="500px">
             <div class="carousel-caption d-none d-md-block">
@@ -196,7 +201,7 @@
     </div>
 </div>
 
-<!-- Footer -->
+<!-- Footer Section -->
 <footer class="bg-dark text-white py-4">
     <div class="container">
         <div class="row">
