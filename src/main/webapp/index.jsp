@@ -77,7 +77,7 @@
             </div>
         </div>
         <div class="carousel-item">
-            <img src="img/all.jpg" class="d-block w-100" alt="Slide 2" height="500px">
+            <img src="img/hosp1.jpg" class="d-block w-100" alt="Slide 2" height="500px">
             <div class="carousel-caption d-none d-md-block">
                 <h5 style="color: white;">Exceptional Patient Care</h5>
                 <p style="color: #f1f1f1;">Our staff is dedicated to ensuring your well-being.</p>
