@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index Page</title>
-    <--! Add Css from component module -->
+    <!-- Add Css from component module -->
     <%@ include file="component/allcss.jsp" %>
 
     <!-- CSS for styling -->
