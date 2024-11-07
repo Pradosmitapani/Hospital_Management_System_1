@@ -9,7 +9,7 @@
     <%@include file="component/allcss.jsp"%>
     <style type="text/css">
         body {
-            background-image: url('img/doctor.jpg');
+            background-image: url('img/all1.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
