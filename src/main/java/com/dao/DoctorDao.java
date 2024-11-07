@@ -172,6 +172,8 @@ public class DoctorDao {
         return d;
     }
 
+//Show the number of Doctor Dynamically
+
     public int countDoctor() {
         int i = 0;
         try {
@@ -188,6 +190,7 @@ public class DoctorDao {
 
         return i;
     }
+//Show the number of Appointment Dynamically
 
     public int countAppointment() {
         int i = 0;
@@ -205,6 +208,7 @@ public class DoctorDao {
 
         return i;
     }
+//Show the number of Appointment by Doctor Dynamically
 
     public int countAppointmentByDocotrId(int did) {
         int i = 0;
@@ -223,6 +227,7 @@ public class DoctorDao {
 
         return i;
     }
+//Show the number of User Dynamically
 
     public int countUSer() {
         int i = 0;
@@ -240,6 +245,7 @@ public class DoctorDao {
 
         return i;
     }
+//Show the number of Specialist Dynamically
 
     public int countSpecialist() {
         int i = 0;

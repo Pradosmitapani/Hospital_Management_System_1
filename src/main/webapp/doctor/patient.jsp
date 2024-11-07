@@ -23,7 +23,7 @@
 <body>
 
 
-<c:if test="${ empty adminObj }">
+<c:if test="${ empty doctObj }">
   <c:redirect url="../doctor_login.jsp"></c:redirect>
 </c:if>
 
@@ -46,6 +46,7 @@
           <th scope="col">Doctor Name</th>
           <th scope="col">Address</th>
           <th scope="col">Status</th>
+          <th scope="col">Action</th>
         </tr>
         </thead>
         <tbody>

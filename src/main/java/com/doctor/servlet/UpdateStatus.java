@@ -27,6 +27,7 @@ public class UpdateStatus extends HttpServlet {
 
             HttpSession session = req.getSession();
 
+               //did = doctorid
             if (dao.updateCommentStatus(id, did, comm)) {
                 session.setAttribute("succMsg", "Comment Updated");
                 resp.sendRedirect("doctor/patient.jsp");
