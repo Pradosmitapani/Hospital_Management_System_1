@@ -33,16 +33,7 @@
 
                     <p class="fs-4 text-center">Admin Login</p>
 
-                    <%--Session create--%>
-                    <c:if test="${not empty succMsg}">
-                        <p class="text-center text-success fs-3">${succMsg}</p>
-                        <c:remove var="succMsg" scope="session"/>
-                    </c:if>
 
-                    <c:if test="${not empty errorMsg}">
-                        <p class="text-center text-danger fs-3">${errorMsg}</p>
-                        <c:remove var="errorMsg" scope="session"/>
-                    </c:if>
 
 
                     <form action="adminLogin" method="post">
