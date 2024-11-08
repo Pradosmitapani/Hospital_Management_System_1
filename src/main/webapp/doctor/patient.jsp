@@ -12,7 +12,7 @@
 <html>
 <head>
   <meta charset="ISO-8859-1">
-  <title>Insert title here</title>
+  <title>Patient Page</title>
   <%@include file="../component/allcss.jsp"%>
   <style type="text/css">
     .paint-card {
@@ -44,9 +44,9 @@
           <th scope="col">Mob No</th>
           <th scope="col">Diseases</th>
           <th scope="col">Doctor Name</th>
-          <th scope="col">Address</th>
-          <th scope="col">Status</th>
-          <th scope="col">Action</th>
+          <th scope="col">Comment</th>
+
+
         </tr>
         </thead>
         <tbody>
