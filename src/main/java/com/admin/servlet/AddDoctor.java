@@ -18,8 +18,6 @@ public class AddDoctor extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-
-
         try {
             String fullName=req.getParameter("fullname");
             String dob =req.getParameter("dob");
@@ -38,21 +36,15 @@ public class AddDoctor extends HttpServlet {
                 session.setAttribute("succMsg", "Doctor Added Successfully..");
                 resp.sendRedirect("admin/doctor.jsp");
 
-
             }else {
                 session.setAttribute("errorMsg", "something wrong on server");
                 resp.sendRedirect("admin/doctor.jsp");
 
-
             }
-
-
-
 
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
-
 
 }

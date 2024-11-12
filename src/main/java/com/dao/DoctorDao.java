@@ -324,7 +324,7 @@ public class DoctorDao {
             if (i == 1) {
                 f = true;
             }
-        } catch (Exception e) {
+        } catch (Exception e){
             e.printStackTrace();
         }
 
@@ -354,10 +354,9 @@ public class DoctorDao {
                 list.add(d);
             }
 
-        } catch (Exception e) {
+        } catch (Exception e){
             e.printStackTrace();
         }
-
         return list;
     }
 

@@ -1,7 +1,7 @@
 package com.entity;
 
 public class Doctor {
-
+    // INSTANCE VARIABLE
     private int id;
     private String fullName;
     private String dob;
@@ -11,6 +11,7 @@ public class Doctor {
     private String mobNo;
     private String password;
 
+    // DEFAULT CONSTRUCTOR
     public Doctor() {
         super();
         // TODO Auto-generated constructor stub
@@ -19,6 +20,7 @@ public class Doctor {
     public Doctor(String fullName, String dob, String qualification, String specialist, String email, String mobNo,
                   String password) {
         super();
+        // PARAMETERIZED CONSTRUCTOR
         this.fullName = fullName;
         this.dob = dob;
         this.qualification = qualification;

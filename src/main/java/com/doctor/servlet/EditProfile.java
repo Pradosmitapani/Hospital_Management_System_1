@@ -20,7 +20,6 @@ public class EditProfile extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         try {
-
             String fullName = req.getParameter("fullname");
             String dob = req.getParameter("dob");
             String qualification = req.getParameter("qualification");

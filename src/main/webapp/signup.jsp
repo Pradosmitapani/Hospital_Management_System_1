@@ -5,7 +5,7 @@
 <%@page isELIgnored="false"%>
 <html>
 <head>
-    <title>Signup page</title>
+    <title>Register Page</title>
     <%@include file="component/allcss.jsp"%>
     <%--Shaddow in all page--%>
     <style type="text/css">
