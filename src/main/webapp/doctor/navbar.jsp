@@ -2,7 +2,7 @@
 <%@page isELIgnored="false"%>
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid">
-        <a class="navbar-brand" href="index.jsp"><i
+        <a class="navbar-brand" href="../index.jsp"><i
                 class="fas fa-clinic-medical"></i> Medi Home</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent"

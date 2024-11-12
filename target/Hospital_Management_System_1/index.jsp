@@ -117,7 +117,7 @@
                         <div class="card-body text-center">
                             <i class="fa fa-shield-alt fs-3 text-primary"></i>
                             <p class="fs-5 mt-2">100% Safety</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p>Ensuring patient care, hygiene, trained staff, protocols, and equipment reliability.</p>
                         </div>
                     </div>
                 </div>
@@ -126,7 +126,7 @@
                         <div class="card-body text-center">
                             <i class="fa fa-leaf fs-3 text-primary"></i>
                             <p class="fs-5 mt-2">Clean Environment</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p>Maintain hygiene, disinfect surfaces, proper waste disposal, sterile equipment, ventilation.</p>
                         </div>
                     </div>
                 </div>
@@ -135,7 +135,7 @@
                         <div class="card-body text-center">
                             <i class="fa fa-user-md fs-3 text-primary"></i>
                             <p class="fs-5 mt-2">Friendly Doctors</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p>Approachable, compassionate, attentive, patient-focused, supportive, empathetic, understanding.</p>
                         </div>
                     </div>
                 </div>
@@ -144,7 +144,7 @@
                         <div class="card-body text-center">
                             <i class="fa fa-flask fs-3 text-primary"></i>
                             <p class="fs-5 mt-2">Medical Research</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p>Innovative studies, clinical trials, data analysis, patient participation, advancing treatments./p>
                         </div>
                     </div>
                 </div>
