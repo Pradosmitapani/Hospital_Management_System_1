@@ -4,5 +4,15 @@
 <p>Advance Java concepts like JSP,JSTL,Servlet,HTML,CSS,BOOTSTRAP 5,Fontawesome and MySQL</p><hr>
 <h4>Project View :</h4>
 <p>Some screenshots of this project are given below</p><hr>
-![Uploading image.png…]()
+<img src="pic1.jpg" alt="index" width="500" height="333">
+<img src="pic2.jpg" alt="index" width="500" height="333">
+<img src="pic3.jpg" alt="index" width="500" height="333">
+<img src="pic4.jpg" alt="index" width="500" height="333">
+<img src="pic5.jpg" alt="index" width="500" height="333">
+<img src="pic6.jpg" alt="index" width="500" height="333">
+<img src="pic7.jpg" alt="index" width="500" height="333">
+<img src="pic8.jpg" alt="index" width="500" height="333">
+
+
+
 

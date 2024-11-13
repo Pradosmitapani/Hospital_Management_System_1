@@ -9,7 +9,7 @@
 <html>
 <head>
   <meta charset="ISO-8859-1">
-  <title>Insert title here</title>
+  <title>Comment Page</title>
   <style type="text/css">
     .paint-card {
       box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
