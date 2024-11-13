@@ -4,8 +4,8 @@
 <p>Advance Java concepts like JSP,JSTL,Servlet,HTML,CSS,BOOTSTRAP 5,Fontawesome and MySQL</p><hr>
 <h4>Project View :</h4>
 <p>Some screenshots of this project are given below</p><hr>
-<img src="C:\Users\dwibe\eclipse-workspace\Hospital_Management_System_1\src\main\webapp\img\pic1.jpg" alt="index" width="500" height="333">
-<img src="pic2.jpg" alt="index1" width="500" height="333">
+![](img\pic1.jpg)
+<img src="img/pic2.jpg" alt="index1" width="500" height="333">
 <img src="pic3.jpg" alt="index2" width="500" height="333">
 <img src="pic4.jpg" alt="index3" width="500" height="333">
 <img src="pic5.jpg" alt="index4" width="500" height="333">
