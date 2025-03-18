@@ -73,7 +73,7 @@
     <!-- Add First image in Carousel -->
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="img/doctor.jpg" class="d-block w-100" alt="Slide 1" height="500px">
+            <img src="img/index_5.jpeg" class="d-block w-100" alt="Slide 1" height="500px">
             <div class="carousel-caption d-none d-md-block">
                 <h5 style="color: white;">Welcome to Our Hospital</h5>
                 <p style="color: #f1f1f1;">Providing comprehensive healthcare with dedication and innovation.</p>
