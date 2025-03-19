@@ -89,7 +89,7 @@
         <div class="col-md-10">
             <div class="card paint-card">
                 <div class="card-body text-center">
-                    <i class="bi bi-person fs-2"></i>
+                    <i class="fa-solid fa-user-doctor fa-2x"></i>
                     <h2 class="mb-4" style="color: #fff; text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5);">Doctor Login</h2>
 
                     <!-- Success Message -->
