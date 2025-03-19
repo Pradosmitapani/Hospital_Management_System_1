@@ -73,7 +73,7 @@
     <!-- Add First image in Carousel -->
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="img/index_5.jpeg" class="d-block w-100" alt="Slide 1" height="500px">
+            <img src="img/WellSphere_01.jpg" class="d-block w-100" alt="Slide 1" style="height: 500px; object-fit:cover; object-position: 60% 30%;">
             <div class="carousel-caption d-none d-md-block">
                 <h5 style="color: white;">Welcome to Our Hospital</h5>
                 <p style="color: #f1f1f1;">Providing comprehensive healthcare with dedication and innovation.</p>
@@ -89,7 +89,7 @@
         </div>
         <!-- Add Third image in Carousel -->
         <div class="carousel-item">
-            <img src="img/doct88.jpg" class="d-block w-100" alt="Slide 3" height="500px">
+            <img src="img/doc_03.jpg" class="d-block w-100" alt="Slide 3" style="height: 500px; object-fit:cover; object-position: 80% 30%;">
             <div class="carousel-caption d-none d-md-block">
                 <h5 style="color: white;">Innovative Medical Research</h5>
                 <p style="color: #f1f1f1;">Pioneering treatments and advancing medical knowledge.</p>
