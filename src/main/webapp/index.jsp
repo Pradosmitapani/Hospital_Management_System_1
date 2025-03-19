@@ -112,46 +112,53 @@
     <div class="row">
         <div class="col-md-8 p-5">
             <div class="row">
-                <div class="col-md-6">
-                    <div class="card paint-card">
-                        <div class="card-body text-center">
-                            <i class="fa fa-shield-alt fs-3 text-primary"></i>
-                            <p class="fs-5 mt-2">100% Safety</p>
-                            <p>Ensuring patient care, hygiene, trained staff, protocols, and equipment reliability.</p>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="card paint-card h-100 d-flex flex-column">
+                            <div class="card-body text-center flex-grow-1">
+                                <i class="fa fa-shield-alt fs-3 text-primary"></i>
+                                <p class="fs-5 mt-2 fw-bold">100% Safety</p>
+                                <p class="text-muted">Ensuring patient care, hygiene, trained staff, protocols, and equipment reliability.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card paint-card h-100 d-flex flex-column">
+                            <div class="card-body text-center flex-grow-1">
+                                <i class="fa fa-leaf fs-3 text-primary"></i>
+                                <p class="fs-5 mt-2 fw-bold">Clean Environment</p>
+                                <p class="text-muted">Maintain hygiene, disinfect surfaces, proper waste disposal, sterile equipment, ventilation.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card paint-card h-100 d-flex flex-column">
+                            <div class="card-body text-center flex-grow-1">
+                                <i class="fa fa-user-md fs-3 text-primary"></i>
+                                <p class="fs-5 mt-2 fw-bold">Friendly Doctors</p>
+                                <p class="text-muted">Approachable, compassionate, attentive, patient-focused, supportive, empathetic, understanding.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card paint-card h-100 d-flex flex-column">
+                            <div class="card-body text-center flex-grow-1">
+                                <i class="fa fa-flask fs-3 text-primary"></i>
+                                <p class="fs-5 mt-2 fw-bold">Medical Research</p>
+                                <p class="text-muted">Innovative studies, clinical trials, data analysis, patient participation, advancing treatments.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="card paint-card">
-                        <div class="card-body text-center">
-                            <i class="fa fa-leaf fs-3 text-primary"></i>
-                            <p class="fs-5 mt-2">Clean Environment</p>
-                            <p>Maintain hygiene, disinfect surfaces, proper waste disposal, sterile equipment, ventilation.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mt-2">
-                    <div class="card paint-card">
-                        <div class="card-body text-center">
-                            <i class="fa fa-user-md fs-3 text-primary"></i>
-                            <p class="fs-5 mt-2">Friendly Doctors</p>
-                            <p>Approachable, compassionate, attentive, patient-focused, supportive, empathetic, understanding.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mt-2">
-                    <div class="card paint-card">
-                        <div class="card-body text-center">
-                            <i class="fa fa-flask fs-3 text-primary"></i>
-                            <p class="fs-5 mt-2">Medical Research</p>
-                            <p>Innovative studies, clinical trials, data analysis, patient participation, advancing treatments./p>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
-        <div class="col-md-4">
-            <img alt="Hospital Team" src="img/doct1.jpg" height="380px" style="border-radius: 10px;">
+        <div class="col-md-4 d-flex flex-column align-items-center">
+            <img alt="Hospital Team" src="img/doct1.jpg" class="img-fluid rounded"
+                 style="height: 380px; width: 100%; object-fit: cover; margin-top:85px;">
         </div>
     </div>
 </div>
@@ -205,15 +212,50 @@
 <footer class="bg-dark text-white py-4">
     <div class="container">
         <div class="row">
+            <!-- About Us Section -->
             <div class="col-md-4">
                 <h5>About Us</h5>
                 <p>Our hospital provides quality healthcare services and advanced medical research to ensure the best care for our patients.</p>
             </div>
-            <div class="col-md-4">
-                <h5>Contact</h5>
-                <p>Email: contact@hospital.com</p>
-                <p>Phone: (123) 456-7890</p>
+
+            <!-- Quick Links Section -->
+            <div class="col-md-2">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.jsp" class="text-white text-decoration-none">Home</a></li>
+                    <li><a href="admin_login.jsp" class="text-white text-decoration-none">Admin</a></li>
+                    <li><a href="doctor_login.jsp" class="text-white text-decoration-none">Doctor</a></li>
+                    <li><a href="user_appointment.jsp" class="text-white text-decoration-none">Appointment</a></li>
+                    <li><a href="user_login.jsp" class="text-white text-decoration-none">User</a></li>
+                </ul>
             </div>
+
+            <!-- Contact Section -->
+            <div class="col-md-3">
+                <h5>Contact</h5>
+                <p>Email: wellsphere@hospital.com</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Address: 123 Wellness Street, Health City</p>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="col-md-3">
+                <h5>Follow Us</h5>
+                <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <hr class="bg-light">
+
+        <!-- Copyright & Terms -->
+        <div class="text-center">
+            <p class="mb-0">&copy; 2025 WellSphere Hospital. All Rights Reserved.</p>
+            <a href="#" class="text-white text-decoration-none">Terms of Service</a> |
+            <a href="#" class="text-white text-decoration-none">Privacy Policy</a>
         </div>
     </div>
 </footer>
+</body>
