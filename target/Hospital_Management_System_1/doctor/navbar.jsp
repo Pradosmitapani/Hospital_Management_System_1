@@ -22,16 +22,22 @@
             <form class="d-flex">
                 <div class="dropdown">
                     <button class="btn btn-light dropdown-toggle" type="button"
-                            id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                        <i class="fas fa-user-circle"></i>${doctObj.fullName}
+                            id="doctorDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-user-circle"></i> ${doctObj.fullName}
                     </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <ul class="dropdown-menu" aria-labelledby="doctorDropdown">
                         <li><a class="dropdown-item" href="edit_profile.jsp">Edit Profile</a></li>
                         <li><a class="dropdown-item" href="../doctorLogout">Logout</a></li>
                     </ul>
                 </div>
             </form>
+
         </div>
     </div>
 </nav>
+<!-- Bootstrap & jQuery (Required for Dropdown) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- FontAwesome (For Icons) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>

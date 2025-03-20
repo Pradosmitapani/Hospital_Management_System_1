@@ -23,7 +23,6 @@
   <c:redirect url="../doctor_login.jsp"></c:redirect>
 </c:if>
 
-
 <%@include file="navbar.jsp"%>
 
 <div class="container p-4">
@@ -43,17 +42,16 @@
         <div class="card-body">
           <form action="../doctChangePassword" method="post">
             <div class="mb-3">
-              <label>Enter New Password</label> <input type="text"
-                                                       name="newPassword" class="form-control" required>
+              <label>Enter New Password</label>
+              <input type="text" name="newPassword" class="form-control" required>
             </div>
 
             <div class="mb-3">
-              <label>Enter Old Password</label> <input type="text"
-                                                       name="oldPassword" class="form-control" required>
+              <label>Enter Old Password</label>
+              <input type="text" name="oldPassword" class="form-control" required>
             </div>
             <input type="hidden" value="${doctObj.id }" name="uid">
-            <button class="btn btn-success col-md-12">Change
-              Password</button>
+            <button class="btn btn-success col-md-12">Change Password</button>
           </form>
         </div>
       </div>
@@ -74,51 +72,50 @@
         <div class="card-body">
           <form action="../doctorUpdateProfile" method="post">
             <div class="mb-3">
-              <label class="form-label">Full Name</label> <input type="text"
-                                                                 required name="fullname" class="form-control"
-                                                                 value="${doctObj.fullName }">
+              <label class="form-label">Full Name</label>
+              <input type="text" required name="fullname" class="form-control"
+                     value="${doctObj.fullName }">
             </div>
 
             <div class="mb-3">
-              <label class="form-label">DOB</label> <input type="date"
-                                                           required name="dob" class="form-control"
-                                                           value="${doctObj.dob }">
+              <label class="form-label">DOB</label>
+              <input type="date" required name="dob" class="form-control"
+                     value="${doctObj.dob }">
             </div>
 
             <div class="mb-3">
-              <label class="form-label">Qualification</label> <input required
-                                                                     name="qualification" type="text" class="form-control"
-                                                                     value="${doctObj.qualification }">
+              <label class="form-label">Qualification</label>
+              <input required name="qualification" type="text" class="form-control"
+                     value="${doctObj.qualification }">
             </div>
             <div class="mb-3">
-              <label class="form-label">Specialist</label> <select name="spec"
-                                                                   required class="form-control">
-              <option>${doctObj.specialist }</option>
+              <label class="form-label">Specialist</label>
+              <select name="spec" required class="form-control">
+                <option>${doctObj.specialist }</option>
 
-              <%
-                SpecialistDao dao = new SpecialistDao(DBConnect.getConn());
-                List<Specalist> list = dao.getAllSpecialist();
-                for (Specalist s : list) {
-              %>
-              <option><%=s.getSpecialistName()%></option>
-              <%
-                }
-              %>
-
-
-            </select>
+                <%
+                  SpecialistDao dao = new SpecialistDao(DBConnect.getConn());
+                  List<Specalist> list = dao.getAllSpecialist();
+                  for (Specalist s : list) {
+                %>
+                <option><%=s.getSpecialistName()%></option>
+                <%
+                  }
+                %>
+              </select>
             </div>
 
             <div class="mb-3">
-              <label class="form-label">Email</label> <input type="text"
-                                                             readonly required name="email" class="form-control"
-                                                             value="${doctObj.email }">
+              <label class="form-label">Email</label>
+              <input type="text" readonly required name="email" class="form-control"
+                     value="${doctObj.email }">
             </div>
 
             <div class="mb-3">
-              <label class="form-label">Mob No</label> <input type="text"
-                                                              required name="mobno" class="form-control"
-                                                              value="${doctObj.mobNo }">
+              <label class="form-label">Mob No</label>
+              <input type="text" required name="mobno" class="form-control"
+                     value="${doctObj.mobNo }"
+                     pattern="\d{10}" title="Phone number must be exactly 10 digits">
             </div>
             <input type="hidden" name="id" value="${doctObj.id }">
             <button type="submit" class="btn btn-primary">Update</button>

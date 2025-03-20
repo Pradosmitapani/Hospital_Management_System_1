@@ -27,6 +27,7 @@
             width: 100%;
             background-size: cover;
             background-repeat: no-repeat;
+            margin-top: 20px;
         }
     </style>
 </head>

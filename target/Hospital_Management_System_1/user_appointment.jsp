@@ -43,11 +43,6 @@
             padding: 10px;
         }
 
-        .form-control:focus {
-            border-color: #28a745;
-            box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
-        }
-
         .btn-success {
             background-color: #28a745;
             border-color: #28a745;
@@ -67,10 +62,6 @@
             padding: 30px;
         }
 
-        .col-md-12 {
-            margin-top: 20px;
-        }
-
         .text-center {
             color: #003366;
         }
@@ -82,30 +73,6 @@
 
         .btn-submit-container {
             text-align: center;
-        }
-
-        /* Responsive styles */
-        @media (max-width: 768px) {
-            .container-fluid {
-                padding: 10px;
-            }
-
-            .card-body {
-                padding: 20px;
-            }
-
-            .col-md-6 {
-                margin-bottom: 10px;
-            }
-
-            .col-md-12 {
-                margin-top: 15px;
-            }
-
-            .btn-submit-container a, .btn-submit-container button {
-                width: 100%;
-                margin-top: 10px;
-            }
         }
 
     </style>
@@ -170,9 +137,13 @@
                             <input required type="email" class="form-control" name="email">
                         </div>
 
+                        <!-- Updated Phone Number Field with Validation -->
                         <div class="col-md-6">
                             <label for="inputEmail4" class="form-label">Phone No</label>
-                            <input maxlength="10" required type="number" class="form-control" name="phno">
+                            <input required type="text" class="form-control" name="phno"
+                                   pattern="\d{10}" maxlength="10"
+                                   title="Phone number must be exactly 10 digits"
+                                   oninput="this.value=this.value.replace(/[^0-9]/g,'')">
                         </div>
 
                         <div class="col-md-6">
@@ -189,8 +160,7 @@
                                     List<Doctor> list = dao.getAllDoctor();
                                     for (Doctor d : list) {
                                 %>
-                                <option value="<%=d.getId()%>"><%=d.getFullName()%> (<%=d.getSpecialist()%>)
-                                </option>
+                                <option value="<%=d.getId()%>"><%=d.getFullName()%> (<%=d.getSpecialist()%>)</option>
                                 <%
                                     }
                                 %>
@@ -199,7 +169,7 @@
 
                         <div class="col-md-12">
                             <label>Full Address</label>
-                            <textarea required name="address" class="form-control" rows="3" cols=""></textarea>
+                            <textarea required name="address" class="form-control" rows="3"></textarea>
                         </div>
 
                         <div class="btn-submit-container">
