@@ -2,8 +2,7 @@
 <%@page isELIgnored="false"%>
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid">
-        <a class="navbar-brand" href="../index.jsp"><i
-                class="fas fa-clinic-medical"></i> Medi Home</a>
+        <a class="navbar-brand" href="../index.jsp"> WellSphere </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -25,12 +24,15 @@
                 <div class="dropdown">
                     <button class="btn btn-light dropdown-toggle" type="button"
                             id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                            aria-expanded="false">Admin</button>
+                            aria-expanded="false">
+                        Admin
+                    </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                         <li><a class="dropdown-item" href="../adminLogout">Logout</a></li>
                     </ul>
                 </div>
             </form>
+
         </div>
     </div>
 </nav>
