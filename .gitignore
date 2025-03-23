@@ -1,0 +1,12 @@
+# IntelliJ IDEA files
+.idea/
+*.iml
+
+# Maven build output
+target/
+
+# Local Tomcat
+apache-tomcat-9.0.102/
+
+# Other
+.DS_Store
