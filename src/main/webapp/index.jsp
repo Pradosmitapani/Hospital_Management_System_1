@@ -316,7 +316,7 @@
             </div>
         </div>
         <div class="col-md-4 d-flex flex-column align-items-center">
-            <img alt="Hospital Team" src="img/ranjit.jpg" class="img-fluid" style="height: 380px; width: 100%; object-fit: cover; margin-top: 85px;">
+            <img alt="Hospital Team" src="img/doctor2.jpg" class="img-fluid" style="height: 380px; width: 100%; object-fit: cover; margin-top: 85px;">
         </div>
     </div>
 </div>

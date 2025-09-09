@@ -316,7 +316,7 @@
             </div>
         </div>
         <div class="col-md-4 d-flex flex-column align-items-center">
-            <img alt="Hospital Team" src="img/ranjit.jpg" class="img-fluid" style="height: 380px; width: 100%; object-fit: cover; margin-top: 85px;">
+            <img alt="Hospital Team" src="img/doctor2.jpg" class="img-fluid" style="height: 380px; width: 100%; object-fit: cover; margin-top: 85px;">
         </div>
     </div>
 </div>
@@ -358,7 +358,7 @@
             <div class="card paint-card">
                 <div class="card-body text-center">
                     <img src="img/doct2.jpg" width="200px" height="200px">
-                    <p class="fw-bold fs-5">Dr. Siva Niuise Paule</p>
+                    <p class="fw-bold fs-5">Dr.Rajashree Rout</p>
                     <p class="fs-7">(Chief Doctor)</p>
                 </div>
             </div>
